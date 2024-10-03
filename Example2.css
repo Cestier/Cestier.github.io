@@ -6,7 +6,7 @@
 /* This is a 
 multi line comment */
 
-/* CSS files can be used to access e.g. fonts */
+/* CSS files can be used to access e.g. fonts, this will provide the link for css on google */
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
 
 
