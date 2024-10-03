@@ -10,7 +10,7 @@ multi line comment */
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
 
 
-/* Format my paragraph */
+/* Format my paragraph, and this will apply to ALL things that have p tag, if it was only some it would be a class */
 p {
 	font-size: 18px;
 	margin: 5px 5px;
