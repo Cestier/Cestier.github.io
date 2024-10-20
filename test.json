@@ -3,24 +3,7 @@
     "id": 1,
     "name": ""
   },
-  {
-    "id": 8,
-    "name": "graph",
-    "parent": 2
-  },
-{
-"id": 9,
-"name": "BetweennessCentrality",
-"parent": 8,
-},
-  {
-    "id": 14,
-    "name": "optimization",
-    "parent": 2
-  },
-{
-"id": 15,
-"name": "AspectRatioBanker",
+
   {
     "id": 2,
     "name": "analytics",
@@ -37,14 +20,7 @@
     "parent": 3,
     "size": 3938
   },
-    
- {
-    "id": 8,
-    "name": "graph",
-    "parent": 2
-  },
-    
-    {
+  {
     "id": 5,
     "name": "CommunityStructure",
     "parent": 3,
@@ -63,6 +39,11 @@
     "size": 743
   },
   {
+    "id": 8,
+    "name": "graph",
+    "parent": 2
+  },
+  {
     "id": 9,
     "name": "BetweennessCentrality",
     "parent": 8,
@@ -73,11 +54,6 @@
     "name": "LinkDistance",
     "parent": 8,
     "size": 5731
-  },
-    {
-    "id": 14,
-    "name": "optimization",
-    "parent": 2
   },
   {
     "id": 11,
@@ -96,6 +72,11 @@
     "name": "SpanningTree",
     "parent": 8,
     "size": 3416
+  },
+  {
+    "id": 14,
+    "name": "optimization",
+    "parent": 2
   },
   {
     "id": 15,
