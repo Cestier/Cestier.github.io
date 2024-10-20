@@ -39,11 +39,6 @@
     "size": 743
   },
   {
-    "id": 8,
-    "name": "graph",
-    "parent": 2
-  },
-  {
     "id": 9,
     "name": "BetweennessCentrality",
     "parent": 8,
@@ -72,11 +67,6 @@
     "name": "SpanningTree",
     "parent": 8,
     "size": 3416
-  },
-  {
-    "id": 14,
-    "name": "optimization",
-    "parent": 2
   },
   {
     "id": 15,
