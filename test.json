@@ -127,47 +127,6 @@
     "parent": 1
   },
   {
-    "id": 39,
-    "name": "converters",
-    "parent": 38
-  },
-  {
-    "id": 40,
-    "name": "Converters",
-    "parent": 38,
-    "size": 721
-  },
-  {
-    "id": 41,
-    "name": "DelimitedTextConverter",
-    "parent": 38,
-    "size": 4294
-  },
-  {
-    "id": 42,
-    "name": "GraphMLConverter",
-    "parent": 38,
-    "size": 9800
-  },
-  {
-    "id": 43,
-    "name": "IDataConverter",
-    "parent": 38,
-    "size": 1314
-  },
-  {
-    "id": 44,
-    "name": "JSONConverter",
-    "parent": 38,
-    "size": 2220
-  },
-  {
-    "id": 45,
-    "name": "DataField",
-    "parent": 38,
-    "size": 1759
-  },
-  {
     "id": 46,
     "name": "DataSchema",
     "parent": 38,
