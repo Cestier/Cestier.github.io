@@ -1,5 +1,9 @@
 [
   {
+    "id": 1,
+    "name": "Flare",
+    "parent": 1
+    
     "id": 2,
     "name": "analytics",
     "parent": 1
