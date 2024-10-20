@@ -361,34 +361,5 @@
     "name": "Maximum",
     "parent": 67,
     "size": 843
-  },
-  {
-    "id": 86,
-    "name": "methods",
-    "parent": 67
-  },
-  {
-    "id": 87,
-    "name": "add",
-    "parent": 86,
-    "size": 593
-  },
-  {
-    "id": 88,
-    "name": "and",
-    "parent": 86,
-    "size": 330
-  },
-  {
-    "id": 89,
-    "name": "average",
-    "parent": 86,
-    "size": 287
-  },
-  {
-    "id": 90,
-    "name": "count",
-    "parent": 86,
-    "size": 277
   }
 ]
