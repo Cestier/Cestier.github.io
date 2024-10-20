@@ -3,7 +3,24 @@
     "id": 1,
     "name": ""
   },
-
+  {
+    "id": 8,
+    "name": "graph",
+    "parent": 2
+  },
+{
+"id": 9,
+"name": "BetweennessCentrality",
+"parent": 8,
+},
+  {
+    "id": 14,
+    "name": "optimization",
+    "parent": 2
+  },
+{
+"id": 15,
+"name": "AspectRatioBanker",
   {
     "id": 2,
     "name": "analytics",
