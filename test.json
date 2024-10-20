@@ -37,7 +37,14 @@
     "parent": 3,
     "size": 3938
   },
-  {
+    
+ {
+    "id": 8,
+    "name": "graph",
+    "parent": 2
+  },
+    
+    {
     "id": 5,
     "name": "CommunityStructure",
     "parent": 3,
@@ -66,6 +73,11 @@
     "name": "LinkDistance",
     "parent": 8,
     "size": 5731
+  },
+    {
+    "id": 14,
+    "name": "optimization",
+    "parent": 2
   },
   {
     "id": 11,
