@@ -6,23 +6,23 @@
 
   {
     "id": 2,
-    "name": "analytics",
+    "name": "Economie",
     "parent": 1
   },
   {
     "id": 3,
-    "name": "cluster",
+    "name": "Investissement immobilier",
     "parent": 2
   },
   {
     "id": 4,
-    "name": "AgglomerativeCluster",
-    "parent": 3,
+    "name": "Inflation/Depenses personnelles",
+    "parent": 2,
     "size": 3938
   },
   {
     "id": 5,
-    "name": "CommunityStructure",
+    "name": "Épargne",
     "parent": 3,
     "size": 3812
   },
@@ -51,7 +51,7 @@
   },
   {
     "id": 16,
-    "name": "animate",
+    "name": "Securité",
     "parent": 1
   },
   {
@@ -123,18 +123,18 @@
   },
   {
     "id": 38,
-    "name": "data",
+    "name": "Generations",
     "parent": 1
   },
   {
     "id": 46,
-    "name": "DataSchema",
+    "name": "Generation anterieures",
     "parent": 38,
     "size": 2165
   },
   {
     "id": 47,
-    "name": "DataSet",
+    "name": "Generations posterieures",
     "parent": 38,
     "size": 586
   },
@@ -158,18 +158,18 @@
   },
   {
     "id": 51,
-    "name": "display",
+    "name": "Qualité de vie",
     "parent": 1
   },
   {
     "id": 52,
-    "name": "DirtySprite",
+    "name": "Santé",
     "parent": 51,
     "size": 8833
   },
   {
     "id": 53,
-    "name": "LineSprite",
+    "name": "Environnement",
     "parent": 51,
     "size": 1732
   },
@@ -187,7 +187,7 @@
   },
   {
     "id": 56,
-    "name": "flex",
+    "name": "LongTerme/CourtTerme",
     "parent": 1
   },
   {
@@ -198,7 +198,7 @@
   },
   {
     "id": 58,
-    "name": "physics",
+    "name": "Education",
     "parent": 1
   },
   {
@@ -251,7 +251,7 @@
   },
   {
     "id": 67,
-    "name": "query",
+    "name": "Identite",
     "parent": 1
   },
   {
