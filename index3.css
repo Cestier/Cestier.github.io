@@ -1,0 +1,287 @@
+
+/* THIS IS THE CSS FOR INDEX 2 CHART_LIBRARY */
+head {
+    color:tomato;
+    font_weight: 600;
+}
+
+/* This is for the chart library title */
+.big {
+    position: relative;
+    top: 4vh; 
+    left: 33%;
+    font-family: 'Exo', sans-serif;
+    font-size: 8vh;
+    
+}
+
+/* This is for all the paragraphs*/
+p {
+    position: absolute;
+    top: 50vh;
+    left: 0vw;
+    color: white;
+    width: 51%;
+}
+
+
+/* This is for all the headers*/
+h3 {
+    position: absolute; 
+    font-family: 'Exo', Barlow, monospace;
+    font-size: 3vh;
+    color: #000000;
+}
+
+
+/* This is for everything within the External Chart embedding */ 
+  .chart-description {
+    position: relative;
+    top: 10vh;
+    left: 5vw;
+}
+#Location1 {
+    position: absolute;
+    top: 6vh;
+    left: -2vw;
+
+}
+#Location2 {
+    position: absolute;
+    top: 6vh;
+    left: 25vw;
+}
+
+
+
+/* Debating */
+.chart-description1 {
+    position: relative;
+    top: 10vh;
+    left: 61vw;
+}
+
+
+/* Re-create & improve */
+.chart-description2 {
+    position: relative;
+    top:70vh;
+    left: 5vw;
+}
+
+#chart_recreate {
+    position: absolute;
+    top: 8vh;
+    left: 32vw;
+    width: 30vw;
+    height: 35vh;
+}
+
+#original_chart {
+    position: absolute;
+    top: 8vh;
+    left: 0.5vw;
+    width: 30vw;
+    height: 35vh;
+}
+
+#improve_chart {
+    position: absolute;
+    top: 8vh;
+    left: 63.5vw;
+    width: 30vw;
+    height: 35vh;
+}
+
+#text_create {
+    position: relative;
+    top: 45vh;
+    left: 0vw;
+}
+
+
+.chart-description3 {
+    position: relative;
+    top: 115vh;
+    left: 5vw;
+}
+
+
+text-align {
+    left: 20px;
+}
+
+
+
+
+
+    
+/* Links and menu */
+.nav-link {
+    position: relative;
+    top: 30px;
+    right: 50px;
+    font-family: 'Barlow', Courier, monospace;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.nav-link1 {
+    position: relative;
+    top: 70px;
+    right: 50px;
+    font-family: 'Barlow', Courier, monospace;
+    text-decoration: none;
+    padding: 10px 19px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.nav-link2 {
+    position: relative;
+    top: 120px;
+    right: 50px;
+    font-family: 'Barlow', Courier, monospace;
+    text-decoration: none;
+    padding: 1px 19px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.nav-link3 {
+    position: relative;
+    top: 130px;
+    right: 50px;
+    font-family: 'Barlow', Courier, monospace;
+    text-decoration: none;
+    padding: 10px 19px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.nav-link4 {
+    position: relative;
+    top: 0px;
+    right: 90px;
+    font-family: 'Barlow', Courier, monospace;
+    text-decoration: none;
+    padding: 1px 19px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+
+.links {
+    position: absolute;
+    top:58px;
+    left:20px;
+    color: #333;
+}
+
+.Introduction{
+    position: absolute;
+    top:250px;
+    color: #333
+}
+
+body, html {
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        font-family: 'Nunito', sans-serif;
+        overflow-x: hidden;
+        height: 100vh;
+        background: linear-gradient(to bottom, #003399, #FFCC00); /* Sky to Sea gradient */
+    }
+.scroll-indicator {
+    position: relative;
+    top: -1860px; /* Position above the bottom */
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth transition for the flip */
+}
+
+h5.sphere-text {
+    position: relative;
+    top: -23vh;
+    left: 42%;
+    display: inline-block;       /* Inline-block to keep the text within a rounded background */
+    padding: 1vh 1vw;          /* Padding to create space around the text */
+    background-color: #d3d3d3;   /* Light grey background */
+    border-radius: 20px;
+    font: 'Barlow';         /* Round corners to form a sphere-like appearance */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for a slight 3D effect */
+    font-size: 2vh;             /* Adjust font size as needed */
+    color: #333;                 /* Text color */
+    text-align: center;          /* Center the text */
+}
+
+
+
+.dropdown {
+    position: relative;
+    top: -100vh;
+    left:-49vw;
+    display: inline-block;
+    z-index: 20;
+}
+
+.compass-icon {
+    width: 5vw; /* Adjust size as needed */
+    cursor: pointer;
+    transition: transform 0.6s ease; /* Optional: rotation effect on hover */
+}
+
+.compass-icon:hover {
+    transform: rotate(90deg); /* Optional: rotate on hover */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 8vh; /* Adjust based on compass icon size */
+    left: -2.3vw;
+    background-color: #f9f9f900;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}

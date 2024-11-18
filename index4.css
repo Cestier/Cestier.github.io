@@ -1,0 +1,336 @@
+
+/* Les titres */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+
+/* Les ressources */
+h3 {
+    position: absolute;
+    right: 0; /* This moves the element to the far right of the page */
+    font-size: 20px;
+    width: 20%; /* You can adjust this or remove it if not needed */
+    top: 650px; /* Adjust this value to control how far down the title is positioned */ 
+}
+
+.nav-link {
+    position: absolute;
+    top: 760px;
+    margin-right: -1230px;
+    font-family: 'Barlow', Courier, monospace;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+.nav-link1 {
+    position: absolute;
+    top: 800px;
+    right: 50px;
+    font-family: 'Barlow', Courier, monospace;
+    text-decoration: none;
+    padding: 10px 19px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.small {
+    position: relative;
+    top: 4vh; 
+    left: 38%;
+    font-family: 'Exo', sans-serif;
+    font-size: 8vh;
+    
+}
+
+
+h2 {
+    color:#00A39A;
+    font-family: 'Barlow', Barlow, monospace;
+    margin-top: 350px;
+    margin-left: -800px;
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+    height: 100vh;
+    background: linear-gradient(to bottom, #ffffff35, #ec1818db); /* Sky to Sea gradient */
+}
+
+text-align {
+    left: 20px;
+}
+           
+.Resultat {
+    position: relative;
+    top:30vh;
+    left: -20vw;
+    color: #333;
+    text-align: justify;
+    width: 30%; 
+}
+
+
+.big {
+    position: absolute;
+    top: 10px; /* adjust this value to move the title closer to the top */
+    left: 70px;
+    text-align: left;
+}
+
+.Introduction{
+    position: absolute;
+    top:25vh;
+    left: 10vw;
+    color: #333;
+    width: 70%; 
+}
+
+
+/* DROPDOWN BOX ICI */
+
+
+#box-selection {
+    width: 40%; /* Make this box narrower */
+    margin-bottom: 5px
+}
+
+.container label {
+    display: block;
+}
+
+.container select {
+    position: relative;
+}
+
+.container {
+    position: relative; /* This ensures label and select stay together */
+    top: 40vh;
+    left: 500px;
+    margin: 5px;
+}
+
+#box-selection1 {
+    width: 10%; /* Make this box narrower */
+    margin-bottom: 5px;
+    /* You can add specific positioning styles like margin, padding, etc. */
+}
+#box-selection2 {
+    width: 10%; /* Make this box narrower */
+    margin-bottom: 5px;
+    /* You can add specific positioning styles like margin, padding, etc. */
+}
+
+#box-selection3 {
+    width: 10%; /* Make this box narrower */
+    margin-bottom: 5px;
+    /* You can add specific positioning styles like margin, padding, etc. */
+}
+
+#box-selection4 {
+    width: 10%; /* Make this box narrower */
+    margin-bottom: 5px;
+    /* You can add specific positioning styles like margin, padding, etc. */
+}
+
+#box-selection5 {
+    width: 10%; /* Make this box narrower */
+    margin-bottom: 5px;
+    /* You can add specific positioning styles like margin, padding, etc. */
+}
+#box-selection6 {
+    width: 10%; /* Make this box narrower */
+    margin-bottom: 5px;
+    /* You can add specific positioning styles like margin, padding, etc. */
+}
+
+#box-selection7 {
+    width: 10%; /* Make this box narrower */
+    margin-bottom: 5px;
+    /* You can add specific positioning styles like margin, padding, etc. */
+}
+
+#box-selection8 {
+    width: 10%; /* Make this box narrower */
+    margin-bottom: 5px;
+    /* You can add specific positioning styles like margin, padding, etc. */
+}
+
+#box-selection9 {
+    width: 10%; /* Make this box narrower */
+    margin-bottom: 5px;
+    /* You can add specific positioning styles like margin, padding, etc. */
+}
+
+#box-selection10 {
+    width: 10%; /* Make this box narrower */
+    margin-bottom: 5px;
+    /* You can add specific positioning styles like margin, padding, etc. */
+}
+
+#box-selection11 {
+    width: 10%; /* Make this box narrower */
+    margin-bottom: 5px;
+    /* You can add specific positioning styles like margin, padding, etc. */
+}
+
+/* For positioning label and select elements consistently */
+.select-container {
+    position: relative; /* This ensures label and select stay together */
+    top: -45vh;
+    left: 15vw;
+}
+
+.select-container label {
+    display: block;
+}
+
+.select-container select {
+    position: relative;
+}
+
+/* Multiple choice question */
+fieldset {
+    position: relative;
+    top: -500px;
+    left: 400px;
+    display: flex;
+    gap: 5px; /* Adds space between radio buttons */
+    align-items: center;
+    border: 1px solid #ccc; 
+    padding: 0px;
+    background-color: #FFFAED;
+    width: 17%;
+}
+legend {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 10px; /* Adds space between the radio button and the label text */
+}
+
+
+
+/* Choisis l'initative... */
+label {
+    position: relative;
+    font-size: 15px; /* Adjusts the size of the label text */
+    font-family: Barlow, sans-serif; /* Adjusts the font */
+    margin-right: 10px; /* Adds space between the label and the select dropdown */
+    color: #333; /* Change the color of the label */
+}
+
+/* Box qui contient les initiatives */
+select {
+    width: 100%; /* Makes the dropdown full width, adjust to your needs */
+    max-width: relative; /* Limits the width of the dropdown */
+    padding: 5px; /* Adds padding inside the dropdown */
+    font-size: 16px; /* Adjusts the size of the text inside the dropdown */
+    font-family: Barlow, sans-serif; /* Adjusts the font family */
+    color: #333; /* Text color inside the dropdown */
+    background-color: #f9f9f9; /* Background color for the dropdown */
+    border: 1px solid #ccc; /* Border around the dropdown */
+    border-radius: 5px; /* Rounds the corners of the dropdown */
+}
+select:hover {
+    background-color: #f0f0f0;
+    border-color: #888;
+}
+
+/* les options des initiatives */
+option:hover {
+    background-color: tomato;
+}
+.chart-description {
+    position: relative;
+    top: 20vh;
+    left: 5vw;
+}
+#Location1 {
+    position: absolute;
+    top: 60vh;
+    left: -8vw;
+}
+
+
+h5.sphere-text {
+    position: relative;
+    top: -23vh;
+    left: 42%;
+    display: inline-block;       /* Inline-block to keep the text within a rounded background */
+    padding: 1vh 1vw;          /* Padding to create space around the text */
+    background-color: #d3d3d3;   /* Light grey background */
+    border-radius: 20px;
+    font: 'Barlow';         /* Round corners to form a sphere-like appearance */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for a slight 3D effect */
+    font-size: 2vh;             /* Adjust font size as needed */
+    color: #333;                 /* Text color */
+    text-align: center;          /* Center the text */
+}
+
+
+
+.dropdown {
+    position: relative;
+    top: -100vh;
+    left:-49vw;
+    display: inline-block;
+    z-index: 20;
+}
+
+.compass-icon {
+    width: 5vw; /* Adjust size as needed */
+    cursor: pointer;
+    transition: transform 0.6s ease; /* Optional: rotation effect on hover */
+}
+
+.compass-icon:hover {
+    transform: rotate(90deg); /* Optional: rotate on hover */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 8vh; /* Adjust based on compass icon size */
+    left: -2.3vw;
+    background-color: #f9f9f900;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}

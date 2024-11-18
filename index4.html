@@ -1,0 +1,319 @@
+<!-- This HTML file provides a simple example of a portfolio page. It contains a header, a few sections, and a few charts. -->
+<!-- It works with the three css files in this folder: example1.css, example2.css and example3.css. -->
+<!-- The HTML file defines the structure of the page, and the CSS files define how it looks. -->
+<!-- The CSS examples are all designed to work with this page. Try swapping them out on line 29 and see what happens. -->
+
+<!-- Take a look around and make your own copy to adapt for your own use. -->
+
+<!-- This is a comment -->
+<!-- Comments are not displayed in the browser -->
+<!-- They can be used to leave notes in the code -->
+
+<!DOCTYPE html>
+<a href="index2.html" class ="nav-link1">Project Page</a> 
+<a href="index3.html" class ="nav-link">Portfolio Page</a>
+<html> 
+ 
+
+<head>    
+
+    <link rel="stylesheet" type="text/css" href="index4.css">
+    <title>EtMoi?</title> 
+
+    <style>
+        #chartGrid {
+            display: flex;
+        }
+        
+    </style>
+</head>
+
+<body> 
+<!-- The body tag contains the elements that visitors to our page will see. -->
+    <h3 <style> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
+        Les ressources ennuyantes, mais nécessaire pour approfondir votre recherche
+    </h3>
+ 
+    <h1 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
+        ET MOI ?  
+    </h1>
+
+    <h5 class="sphere-text">Work in progress</h5>
+
+    <h2 class="Data"> 
+        Pas besoin de savoir qui vous êtes, mais vous êtes qui? 
+    </h2>
+
+    <div class = "Introduction">
+<p>Comment ce vote peut-il m'affecter? Les politiques disent des choses, peut etre trop. Les academiques encore plus, et c'est long en plus.
+      D'après certaines grosse simplifications, nous avons construis un modèle "Et moi?". Repondez à certains profiles et on vous dit à quel point vous etes dans la merde. 
+   </div>
+
+   <main>
+<div class="container">
+    <label for="box-selection">Choisis l'iniative populaire:</label>
+    <select id="box-selection">
+        <option value="1">1.Arrêté fédéral sur l'étape d'aménagement 2023 des routes nationales</option>
+        <option value="2">2.Modification du code des obligations (droit du bail: sous-location)</option>
+        <option value="3">3.Modification du code des obligations (droit du bail: résiliation pour besoin propre)</option>
+        <option value="4">4.Modification de la loi fédérale sur l'assurance-maladie (financement uniforme des prestations)</option>
+    
+    </select>
+</div>
+
+    <!-- DATA -->
+<div class="select-container">
+    <label for="box-selection1">Emploi:</label>
+    <select id="box-selection1">
+        <option value="1">1.Agriculteurs et ouvriers qualifiés de l’agriculture, de la sylviculture et de la pêche</option>
+        <option value="2">2.Personnel des services directs aux particuliers, commerçants et vendeurs</option>
+        <option value="3">3.Professions intermédiaires</option>
+        <option value="4">4.Directeurs, cadres de direction et gérants</option>
+        <option value="5">5.Conducteurs d’installations et de machines, et ouvriers de l’assemblage</option>
+        <option value="6">6.Professions élémentaires</option>
+        <option value="7">7.Sans indication</option>
+        <option value="8">8.Métiers qualifiés de l’industrie et de l’artisanat</option>
+        <option value="9">9.Employés de type administratif</option>
+        <option value="10">10.Professions intellectuelles et scientifiques</option>
+        <option value="11">11.Aprentissage</option>
+        <option value="12">12.Étudiant de base: en bachelor ou équivalent</option>
+        <option value="13">13.Étudiant évolution intermediaire: en master ou équivalent</option>
+        <option value="14">14.Étudiant évolution finale: en doctorat ou équivalent</option>
+        <option value="15">15.Sans Emploi</option>
+        <option value="16">16.Non actives invalides</option>
+        <option value="17">17.Non actives au foyer</option>
+        <option value="18">18.Non actives à la retraite</option>
+    </select>
+</div>
+    
+    
+<div class="select-container">
+    <label for="box-selection2">Genre:</label>
+    <select id="box-selection2">
+        <option value="0"disabled>A tous le plaisir</option>
+        <option value="1">1.Flemme de répondre</option>
+        <option value="2">2.F</option>
+        <option value="3">3.H</option>
+        <option value="3">4.Autres</option>
+    </select>
+</div>
+
+<div class="select-container">
+    <label for="box-selection3">Status </label>
+    <select id="box-selection3">
+        <option value="0"disabled>(répond,c'est pour les tax pas pour le fb)</option>
+        <option value="1">1.Solo tu connais</option>
+        <option value="2">2.Maries ou famille</option>
+        <option value="3">3.C'est sérieux mais quand ça vient au statut tax (et au choix de film) c'est solo</option>
+        <option value="4">4.Tu veux pas répondre</option>
+    </select>
+</div>
+<div class="select-container">
+    <label for="box-selection4">Impôt fédéral direct des personnes physiques:</label>
+    <select id="box-selection4" disabled>
+        <option value="1">1.</option>
+        <option value="2">2.</option>
+        <option value="3">3.</option>
+        <option value="4">4.</option>
+    </select>
+</div>
+<div class="select-container">
+    <label for="box-selection5">Residents dans quel cantons:</label>
+    <select id="box-selection5" > 
+        <option value="0"disabled>Cantons</option>
+        <option value="1">Aargau</option>
+        <option value="2">Appenzell Innerrhoden</option>
+        <option value="3">Appenzell Ausserrhoden</option>
+        <option value="4">Basel-Landschaft</option>
+        <option value="5">Basel-Stadt</option>
+        <option value="6">Bern</option>
+        <option value="7">Fribourg</option>
+        <option value="8">Geneva</option>
+        <option value="9">Glarus</option>
+        <option value="10">Graubünden</option>
+        <option value="11">Jura</option>
+        <option value="12">Lucerne</option>
+        <option value="13">Neuchâtel</option>
+        <option value="14">Nidwalden</option>
+        <option value="15">Obwalden</option>
+        <option value="16">Schaffhausen</option>
+        <option value="17">Schwyz</option>
+        <option value="18">Solothurn</option>
+        <option value="19">St. Gallen</option>
+        <option value="20">Thurgau</option>
+        <option value="21">Ticino</option>
+        <option value="22">Uri</option>
+        <option value="23">Valais</option>
+        <option value="24">Vaud</option>
+        <option value="25">Zug</option>
+        <option value="26">Zurich</option>
+        <option value="26">Jetsetteur Suisse qui vont revenir pour la retraite</option>
+    </select>
+</div>
+
+<div class="select-container">
+    <label for="box-selection6">Age:</label>
+    <select id="box-selection6">
+        <option value="0"disabled>Pas sur votre passeport, dans votre maniere de vivre</option>
+        <option value="1">18-20</option>
+        <option value="2">21-25</option>
+        <option value="3">26-30</option>
+        <option value="4">31-35</option>
+        <option value="5">36-40</option>
+        <option value="6">41-45</option>
+        <option value="7">46-50</option>
+        <option value="8">51-55</option>
+        <option value="9">56-60</option>
+        <option value="10">61-65</option>
+        <option value="11">66-70</option>
+        <option value="12">71-75</option>
+        <option value="13">76-80</option>
+        <option value="14">81-85</option>
+        <option value="15">86-90</option>
+        <option value="16">90+</option>
+    </select>
+</div>
+
+<div class="select-container">
+    <label for="box-selection7">Plaisirs</label>
+    <select id="box-selection7">
+        <option value="0"disabled>En une phrase, votre plus grand plaisir que vous donne etre Suisse:</option>
+        <option value="1">1. Profiter des lacs. </option>
+        <option value="2">2. Profiter des montagnes.</option>
+        <option value="3">3. Voyager en dehors de la Suisse.</option>
+        <option value="4">4. Roadtrip en Suisse.</option>
+        <option value="5">5. Les écoles </option>
+        <option value="6">41-45</option>
+        <option value="7">46-50</option>
+        <option value="8">51-55</option>
+        <option value="9">56-60</option>
+        <option value="10">61-65</option>
+        <option value="11">66-70</option>
+        <option value="12">71-75</option>
+        <option value="13">76-80</option>
+        <option value="14">81-85</option>
+        <option value="15">86-90</option>
+        <option value="16">90+</option>
+    </select>
+
+    <div class="select-container">
+        <label for="box-selection8">Statut logements</label>
+        <select id="box-selection8">
+            <option value="0"disabled>Pas sur votre passeport, dans votre maniere de vivre</option>
+            <option value="1">1. Locataires</option>
+            <option value="2">2. Sous-locataires</option>
+            <option value="3">3. Propriétaires de la maison</option>
+            <option value="4">4. Coopérateurs/trices</option>
+            <option value="5">5. Autres:Logement mis à disposition gratuitement par un parent ou un employeur, logement de service (p.ex. logement de concierge), bail à ferme.</option>
+        </select>
+</div>
+
+<div class="select-container">
+    <label for="box-selection9">Modèle Assurance maladie</label>
+    <select id="box-selection9">
+        <option value="0"disabled>La dernière et la plus ennuyeuse: votre type d'assurance-maladie</option>
+        <option value="1">1. Standard: Assurance de base</option>
+        <option value="2">2. Médecin de Famille</option>
+        <option value="3">3. Autres Modèles</option>
+    </select>
+</div>
+
+<div class="select-container">
+    <label for="box-selection10">Montant de la franchise</label>
+    <select id="box-selection10">
+        <option value="0"disabled>La dernière et la plus ennuyeuse: votre type d'assurance-maladie</option>
+        <option value="1">300</option>
+        <option value="2">500</option>
+        <option value="3">1'000</option>
+        <option value="4">1'500</option>
+        <option value="5">2'000</option>
+        <option value="6">2'500</option>
+    </select>
+</div>
+
+<div class="select-container">
+    <label for="box-selection11">Energie</label>
+    <select id="box-selection11">
+        <option value="0"disabled>Votre cocktail énergétique</option>
+        <option value="1">1. Carburant > Vous prenez + de 5 avions par an</option>
+        <option value="1">2. Carburant > Vous prenez la voiture + de </option>
+        <option value="2">3. Electricite > hormis vous utilisez train etc</option>
+        <option value="3">4. Gaz > vous utilisez </option>
+        <option value="4">5. force humaine > Vous avez le droit d'attaquer les gens</option>
+    </select>
+</div>
+
+<div class = "Resultat">
+    <p>On ne sait pas ce que cette loi va faire précisement, et si quelqu'un vous dit que oui soit il a trop picole, soit c'est de la propagande. 
+        On ne va pas vous donner de chiffre exacte, mais ça c'est notre fonctionnement: si il y'a un + c'est que vous allez surement en gagner. Si vous avez un 
+        - c'est que vous allez surement en perdre. On parle pas de votre voisin, de votre cousin, on parle de vous étant donne ce que vous avez repondu au dessus. 
+       </div>
+
+       <!-- Question format -->
+       <form id="question-form">
+        <fieldset>
+            <legend>Personnes à charge:</legend>
+    
+            <label>
+                <input type="radio" name="field" value="1">
+                1
+            </label><br>
+    
+            <label>
+                <input type="radio" name="field" value="2">
+                2
+            </label><br>
+    
+            <label>
+                <input type="radio" name="field" value="3">
+                3
+            </label><br>
+    
+            <label>
+                <input type="radio" name="field" value="4+">
+                4 et plus (+ notre respect)
+            </label><br>
+    
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+
+<!--This is all regarding the TreeMap-->
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+
+    <style>
+        #Location1 {
+            display: block;
+            position: relative;
+            top: -300px;
+            left: 500px;
+            margin-right: auto;
+            width: 80%; /* Adjust the width if necessary */
+            padding-top: 1px; /* Optional: Adds space above the chart */
+        }
+    </style>
+
+    <section>
+        <div class="chart-description">
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page --> 
+            </p>
+        </div>
+        <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+    <script>
+        let figure_1_spec = "treemap.json"; // We're storing the URL of the graph we want to display in a variable
+                                                                                                                    // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+        vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
+    </script>
+ 
+
+    <script src="etmoi.js"></script>
+</body>
+ 
+</html>

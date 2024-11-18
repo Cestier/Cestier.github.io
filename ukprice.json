@@ -1,0 +1,70 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    
+    "width": 140, "height": 90,
+  
+    "title": {
+      "text": "UK prices - distributions 1988-2022",
+      "fontSize": 20,
+      "subtitle":["Coloured areas are 10th to 90th percentiles.", "Source: Davies(2024)",""],
+      "color": "black",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "subtitleColor":"black"},
+  
+    "config": {
+        "background":"#eae7ddf0",
+        "view": {
+          "stroke": "transparent"
+        },
+        "font": "Barlow"
+      },
+    
+    "data": {"url": "https://raw.githubusercontent.com/RDeconomist/prices/master/analysis/db_percentilesPerennials.csv"},
+  
+    "transform": [
+      {"filter":{"field": "desc_short", "oneOf":["Duvet", "Electric cooker", "Dry cleaning", "Fruit squash"]}}
+    ],
+  
+   
+    "mark": {
+      "type":"area",
+      "orient":"vertical",
+      "opacity": 1},
+    
+    "encoding": {
+      "facet":{
+        "field":"desc_short",
+        "columns": 2,
+        "title":null,
+        "align":"each",
+        "spacing": 5,
+        "header":{"labelColor":"black"}},
+      "x": {
+        "field": "year",
+        "type": "temporal",
+        "title": null,
+        "axis": {
+          "title": null,
+          "grid": false,
+          "labelColor":"black",
+          "tickColor":"black"}},
+      "y": {
+        "aggregate":"sum",
+        "field": "price",
+        "type": "quantitative",
+        "title":null,
+        "axis": {
+          "title": null,
+          "grid": false,
+          "labelColor":"black",
+          "tickColor":"black"}},
+      "color": {
+        "legend":null,
+        "field": "decile",
+        "scale": {"range": [null, "#5e569b", "#9080ff", "#a57c1b", "#ffb400", "#ffb400", "#a57c1b","#9080ff", "#5e569b"]}},
+      "order": {"field": "decile"}},
+  
+      "resolve": {"scale": {"y": "independent", "x": "independent"}}
+  }
