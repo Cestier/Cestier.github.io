@@ -18,7 +18,7 @@
 
     <!-- Navigation links -->
     <div class="dropdown">
-        <img src="compass.png" alt="Compass" class="compass-icon">
+        <img src="PICS/compass.png" alt="Compass" class="compass-icon">
         <div class="dropdown-content">
             <a href="index.html" >Portfolio Page</a>
             <a href="index3.html" >Project Page</a>
@@ -51,7 +51,7 @@
             <p> 
             There has been many mentions of bureaucracy slowing or obstructing innovation. Here I was interested in seeing whether charts could provide some light on the story. 
             </p>
-            <img class = "chart" id= "innovation_chart" src="innovation_bus.png" alt="Description of image" width="607" >
+            <img class = "chart" id= "innovation_chart" src="PICS/innovation_bus.png" alt="Description of image" width="607" >
             <figure class = "chart" id="Location7"></figure>
         </div>
         
@@ -69,9 +69,9 @@
                 and the improved chart is on the left. The improved chart has a better color scheme, font, and 
                 overall design. 
             </p>
-            <img class = "chart1" id= "chart_recreate" src="gdp_evolution.png" alt="Description of image" width="600">
-            <img class = "chart1" id= "original_chart" src="report.png" alt="Description of image" width="607" >
-            <img class = "chart" id= "improve_chart" src="improve_chart.png" alt="Description of image" width="607" >
+            <img class = "chart1" id= "chart_recreate" src="PICS/gdp_evolution.png" alt="Description of image" width="600">
+            <img class = "chart1" id= "original_chart" src="PICS/report.png" alt="Description of image" width="607" >
+            <img class = "chart" id= "improve_chart" src="PICS/improve_chart.png" alt="Description of image" width="607" >
         </div>
         
     </section>
@@ -83,7 +83,7 @@
             <p> 
                 
             </p>
-            <img class = "chart" id= "loop" src="loopdashboard.png" alt="Description of image" >
+            <img class = "chart" id= "loop" src="PICS/loopdashboard.png" alt="Description of image" >
         </div>
     </section>
 
@@ -94,7 +94,7 @@
             This represents the outflow and inflow of student studying abroad either as part of exchange programs or to study abroad. Anglo-saxon countries are considred the most attractive 
 
             </p>
-            <img class = "chart1" id= "diagram_r" src="Rplot_LV.png" alt="Description of image" width="607" >
+            <img class = "chart1" id= "diagram_r" src="PICS/Rplot_LV.png" alt="Description of image" width="607" >
         </div>
     </section>
 
@@ -115,20 +115,20 @@
     <!-- Embed Vega charts with JavaScript -->
     <script>
         // Embed the first chart
-        const figure_1_spec = "ukprice.json";
+        const figure_1_spec = "JSON/ukprice.json";
         vegaEmbed('#Location1', figure_1_spec);
 
         // Embed the second chart
-        const figure_2_spec = "bitterpint.json";
+        const figure_2_spec = "JSON/bitterpint.json";
         vegaEmbed('#Location2', figure_2_spec);
 
-        const figure_3_spec = "europegdp.json";
+        const figure_3_spec = "JSON/europegdp.json";
         vegaEmbed('#Location3', figure_3_spec);
 
-        const figure_4_spec = "europeclean.json";
+        const figure_4_spec = "JSON/europeclean.json";
         vegaEmbed('#Location4', figure_4_spec);
         
-        const figure_5_spec = "final_chart.json";
+        const figure_5_spec = "JSON/final_chart.json";
         vegaEmbed('#Location7', figure_5_spec);
     </script>
     </script>
