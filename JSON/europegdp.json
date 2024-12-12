@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 250,
+  "data": {
+    "url": "https://raw.githubusercontent.com/leakyMirror/map-of-europe/refs/heads/master/GeoJSON/europe.geojson",
+    "format": {"property": "features"}
+  },
+  "title": {
+    "text": "Europe - GDP per capita",
+    "subtitle": ["Source: World Bank"]
+  },
+  "config": {
+    "background":"#eae7dd00",
+    "view": {
+          "stroke": "transparent"
+        },
+        "font": "Barlow"
+      },
+  "projection": {"type": "naturalEarth1"},
+  "layer": [
+    {
+      "mark": {"type": "geoshape", "fill": "lightgrey"},
+      "transform": [
+        {"filter": "datum.properties.ISO3 != 'ATA'"},
+        {"calculate": "''", "as": "data"}
+      ],
+      "encoding": {
+        "color": {
+            "field": "data",
+            "legend": {"title": "PPP 2021 USD"}
+          },
+        "tooltip": [
+          {"field": "properties.COUNTRY", "title": "Country"},
+          {"field": "value", "title": "GDP pc", "format": "$,.3r"}
+        ]
+      }
+    },
+    {
+      "encoding": {
+        "color": {
+          "field": "value",
+          "scale": {"type": "log"},
+          "legend": {"title": null, "format": "$,.0r"},
+          "type": "quantitative",
+          "scale": {
+            "domain": [30000, 120000],  
+            "range": ["#FFCC00", "#776bcd"] 
+          },
+          "legend": {"title": null, "format": "$,.0r"}
+        },
+        "tooltip": [
+          {"field": "Country"},
+          {"field": "value", "title": "GDP pc", "format": "$,.3r"}
+        ]
+      },
+      "mark": {"type": "geoshape"}
+    }
+  ],
+  "transform": [
+    {
+      "lookup": "properties.ISO3",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/mclass-user/mclass-user.github.io/refs/heads/main/maps/world_gdp_per_capita_PPP_wb.csv"
+        },
+        "key": "ISO3",
+        "fields": ["value", "Country"]
+      }
+    }
+  ]
+}
