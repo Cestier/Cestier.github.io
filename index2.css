@@ -9,7 +9,7 @@ head {
 .big {
     position: relative;
     top: 4vh; 
-    left: 38%;
+    left: 35%;
     font-family: 'Exo', sans-serif;
     font-size: 8vh;
     
@@ -20,9 +20,10 @@ p {
     position: absolute;
     top: 50vh;
     left: 0vw;
-    color: white;
+    color: rgb(0, 0, 0);
     width: 51%;
 }
+
 
 
 /* This is for all the headers*/
@@ -30,6 +31,15 @@ h3 {
     position: absolute; 
     font-family: 'Exo', Barlow, monospace;
     font-size: 3vh;
+    color: #000000;
+}
+
+h2 {
+    position: relative; 
+    left: 18vw;
+    font-family: 'Exo', sans-serif;
+    font-size: 2vh;
+    width: 70%;
     color: #000000;
 }
 
@@ -49,7 +59,7 @@ h3 {
 #Location2 {
     position: absolute;
     top: 6vh;
-    left: 25vw;
+    left: 28vw;
 }
 
 
@@ -57,30 +67,36 @@ h3 {
 /* Debating */
 .chart-description1 {
     position: relative;
-    top: 10vh;
-    left: 61vw;
+    top: 3vh;
+    left: 64vw;
 }
 
 #innovation_chart{
     position: absolute;
     top: 8vh;
-    left: 1vw;
+    left: -1vw;
     width: 30vw;
     height: 40vh;
 }
 
 
+#Location7 {
+    position: absolute;
+    top: 65vh;
+    left: -62vw;
+}
+
 /* Re-create & improve */
 .chart-description2 {
     position: relative;
-    top:70vh;
+    top:137vh;
     left: 5vw;
 }
 
 #chart_recreate {
     position: absolute;
     top: 8vh;
-    left: 32vw;
+    left: 30vw;
     width: 30vw;
     height: 35vh;
 }
@@ -88,7 +104,7 @@ h3 {
 #original_chart {
     position: absolute;
     top: 8vh;
-    left: 0.5vw;
+    left: -2vw;
     width: 30vw;
     height: 35vh;
 }
@@ -96,13 +112,13 @@ h3 {
 #improve_chart {
     position: absolute;
     top: 8vh;
-    left: 63.5vw;
+    left: 62vw;
     width: 30vw;
     height: 35vh;
 }
 
 #text_create {
-    position: relative;
+    position: absolute;
     top: 45vh;
     left: 0vw;
 }
@@ -110,8 +126,16 @@ h3 {
 
 .chart-description3 {
     position: relative;
-    top: 115vh;
+    top: 190vh;
     left: 5vw;
+}
+
+#loop {
+    position: absolute;
+    top: 8vh;
+    left: 1vw;
+    width: 80vw;
+    height: 65vh;
 }
 
 
@@ -120,21 +144,48 @@ text-align {
 }
 
 
+
+/* R Chart */
 .chart-description4 {
     position: relative;
-    top: 115vh;
-    left: 40vw;
+    top: 280vh;
+    left: 5vw;
 }
 
 #diagram_r {
     position: absolute;
     top: 8vh;
-    left: 5vw;
+    left: 1vw;
     width: 30vw;
     height: 50vh;
 }
 
+#text4 {
+    position: absolute;
+    top: 60vh;
+    left: 1vw;
+    color: white;
+    width: 32%;
+}
 
+/* MAPS */
+.chart-description5 {
+    position: relative;
+    top: 280vh;
+    left: 40vw;
+}
+
+#Location3 {
+    position: absolute;
+    top: 6vh;
+    left: 0vw;
+}
+
+#Location4 {
+    position: absolute;
+    top: 45vh;
+    left: 0vw;
+}
 
     
 /* Links and menu */
@@ -225,7 +276,7 @@ body, html {
         font-family: 'Nunito', sans-serif;
         overflow-x: hidden;
         height: 100vh;
-        background: linear-gradient(to bottom, #ffffff35, #010dfad2); /* Sky to Sea gradient */
+        background: linear-gradient(to bottom, #F8F3F3, #F8F3F3); /* Sky to Sea gradient */
     }
 .scroll-indicator {
     position: relative;
@@ -245,7 +296,7 @@ body, html {
 
 h5.sphere-text {
     position: relative;
-    top: -23vh;
+    top: -30vh;
     left: 42%;
     display: inline-block;       /* Inline-block to keep the text within a rounded background */
     padding: 1vh 1vw;          /* Padding to create space around the text */
@@ -304,3 +355,59 @@ h5.sphere-text {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/* Inspired by Christina phm */
+.chart {
+    
+    background-color: #eae7ddf0;
+    width: auto;
+    min-width: auto;
+    align-items: center;
+    justify-content: center;
+    position:static;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-style: solid;
+    border-color: #eae7ddf0; 
+    border-width: 1px;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px;
+    flex-flow: row wrap;
+    
+  }
+  
+  .chart:hover {
+      
+        transform: scale(1.06, 1.06);
+        transition: 1s;
+        
+      }
+  
+
+.chart1 {
+    
+        background-color: #fffffff0;
+        width: auto;
+        min-width: auto;
+        align-items: center;
+        justify-content: center;
+        position:static;
+        margin-left: 10px;
+        margin-top: 10px;
+        border-style: solid;
+        border-color: #eae7ddf0; 
+        border-width: 1px;
+        border-radius: 30px;
+        text-align: center;
+        padding: 10px;
+        flex-flow: row wrap;
+        
+      }
+      
+      .chart1:hover {
+          
+            transform: scale(1.06, 1.06);
+            transition: 1s;
+            
+          }

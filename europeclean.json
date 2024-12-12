@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 410,
+  "height": 250,
+  "data": {
+    "url": "https://raw.githubusercontent.com/leakyMirror/map-of-europe/refs/heads/master/GeoJSON/europe.geojson",
+    "format": {"property": "features"}
+  },
+  "title": {
+    "text": "Map of European Clean Technology",
+    "subtitle": ["Source: Bruegel 2024"]
+  },
+   "config": {
+    "background":"#eae7ddf0",
+    "view": {
+          "stroke": "transparent"
+        },
+        "font": "Barlow"
+      },
+  "projection": {"type": "naturalEarth1"},
+  "layer": [
+    {
+      "mark": {"type": "geoshape", "fill": "#766bcd95"},
+      "transform": [
+        {"filter": "datum.properties.ISO3 != 'ATA'"}
+      ],
+      "encoding": {
+        "tooltip": [
+          {"field": "Country", "title": "Country"}
+        ]
+      }
+    },
+     {
+      "mark": {"type": "geoshape"},
+      "encoding": {
+        "color": {
+          "field": "Facilities",
+          "legend": {"title": "Number of Facilities"}
+        },
+        "tooltip": [
+          {"field": "Country"},
+          {"field": "Technology", "title": "Technology"},
+          {"field": "Facilities", "title": "Facilities"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/Cestier/Cestier.github.io/refs/heads/main/europe.csv"
+      },
+      "mark": "circle",
+      "encoding": {
+        "longitude": {"field": "LON", "type": "quantitative"},
+        "latitude": {"field": "LAT", "type": "quantitative"},
+        "size": {"field": "Facilities", "type": "quantitative","scale": {"range": [0, 800]}},
+        "color": {"field": "Technology", "type": "nominal","scale": {
+            "domain": ["Solar", "Wind", "Heat Pumps", "Batteries"],
+            "range": ["#FFD700", "#4682B4", "#D22626", "#32CD32"]
+          },
+          "legend": {"title": "Technology"}
+        },
+        "tooltip": [
+          {"field": "Country", "title": "Country"},
+          {"field": "Facilities", "title": "Number of Facilities"},
+          {"field": "Technology", "title": "Technology"}
+        ]
+      }
+    }
+  ],
+  "transform": [
+    {
+      "lookup": "properties.ISO3",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/mclass-user/mclass-user.github.io/refs/heads/main/maps/world_gdp_per_capita_PPP_wb.csv"
+        },
+        "key": "ISO3",
+        "fields": ["Country"]
+      }
+    }
+  ]
+}

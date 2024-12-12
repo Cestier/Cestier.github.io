@@ -18,7 +18,7 @@
 
     <!-- Navigation links -->
     <div class="dropdown">
-        <img src="compass.png" alt="Compass" class="compass-icon">
+        <img src="PICS/compass.png" alt="Compass" class="compass-icon">
         <div class="dropdown-content">
             <a href="index.html" >Portfolio Page</a>
             <a href="index3.html" >Project Page</a>
@@ -31,32 +31,35 @@
     <!-- First Chart Section -->
     <section>
         <div class="chart-description">
-            <h3>1/ External Chart Embedding</h3>
+            <h3>1. External Chart Embedding</h3>
             <p> 
-                I embedded these charts from the Economic Observatory while changing them to my 
-                chart flavoring style. This includes purple to yellow, barlow font. To read more about them, 
-                refer to <a href="https://www.economicsobservatory.com/" target="_blank">here.</a>  
+                I embedded these charts from the Economic Observatory while adapting them to my 
+                own visualisation flavor. Some would be ready to trade today's technology for the £1 pint of bitter ! <br>  To read more about them, 
+                refer to <a href="https://www.economicsobservatory.com/" target="_blank">Economic Observatory.</a>  
             </p>
-            <figure id="Location1"></figure>
-            <figure id="Location2"></figure>
+            <figure class = "chart" id="Location1"></figure>
+            <figure class = "chart" id="Location2"></figure>
         </div>
     </section>
+
+<h2> Welcome to the Chart Library ! This is where I post all of my past and present data visualisation projects including those for PP434. </h2>
 
     <!-- Second Chart Section -->
     <section>
         <div class="chart-description1">
-            <h3>2/ Debating</h3>
+            <h3>2. Debating</h3>
             <p> 
             There has been many mentions of bureaucracy slowing or obstructing innovation. Here I was interested in seeing whether charts could provide some light on the story. 
             </p>
-            <img id= "innovation_chart" src="innovation_bus.png" alt="Description of image" width="607" >
+            <img class = "chart" id= "innovation_chart" src="PICS/innovation_bus.png" alt="Description of image" width="607" >
+            <figure class = "chart" id="Location7"></figure>
         </div>
         
     </section>
 
     <section>
         <div class="chart-description2">
-            <h3>3/ Embed, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <h3>3. Embed, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                    Re-create, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -66,9 +69,9 @@
                 and the improved chart is on the left. The improved chart has a better color scheme, font, and 
                 overall design. 
             </p>
-            <img id= "chart_recreate" src="gdp_evolution.png" alt="Description of image" width="600">
-            <img id= "original_chart" src="report.png" alt="Description of image" width="607" >
-            <img id= "improve_chart" src="improve_chart.png" alt="Description of image" width="607" >
+            <img class = "chart1" id= "chart_recreate" src="PICS/gdp_evolution.png" alt="Description of image" width="600">
+            <img class = "chart1" id= "original_chart" src="PICS/report.png" alt="Description of image" width="607" >
+            <img class = "chart" id= "improve_chart" src="PICS/improve_chart.png" alt="Description of image" width="607" >
         </div>
         
     </section>
@@ -76,37 +79,58 @@
 
     <section>
         <div class="chart-description3">
-            <h3>4/ Dashboard with Loop </h3>
+            <h3>4. Dashboard with Loop </h3>
             <p> 
                 
             </p>
-            <figure id="Location3"></figure>
+            <img class = "chart" id= "loop" src="PICS/loopdashboard.png" alt="Description of image" >
         </div>
     </section>
 
     <section>
         <div class="chart-description4">
-            <h3>5/ R based Diagram </h3>
-            <p> 
+            <h3>5. R based Diagram </h3>
+            <p id= "text4"> 
             This represents the outflow and inflow of student studying abroad either as part of exchange programs or to study abroad. Anglo-saxon countries are considred the most attractive 
 
             </p>
-            <img id= "diagram_r" src="Rplot_LV.png" alt="Description of image" width="607" >
+            <img class = "chart1" id= "diagram_r" src="PICS/Rplot_LV.png" alt="Description of image" width="607" >
         </div>
     </section>
 
+
+    <section>
+        <div class="chart-description5">
+            <h3>6. Maps </h3>
+            <p id= "text5"> 
+            
+            </p>
+            <figure class = "chart" id="Location3"></figure>
+            <figure class = "chart" id="Location4"></figure>
+        </div>
+    </section>
 
 
 
     <!-- Embed Vega charts with JavaScript -->
     <script>
         // Embed the first chart
-        const figure_1_spec = "ukprice.json";
+        const figure_1_spec = "JSON/ukprice.json";
         vegaEmbed('#Location1', figure_1_spec);
 
         // Embed the second chart
-        const figure_2_spec = "bitterpint.json";
+        const figure_2_spec = "JSON/bitterpint.json";
         vegaEmbed('#Location2', figure_2_spec);
+
+        const figure_3_spec = "JSON/europegdp.json";
+        vegaEmbed('#Location3', figure_3_spec);
+
+        const figure_4_spec = "JSON/europeclean.json";
+        vegaEmbed('#Location4', figure_4_spec);
+        
+        const figure_5_spec = "JSON/final_chart.json";
+        vegaEmbed('#Location7', figure_5_spec);
+    </script>
     </script>
 
  

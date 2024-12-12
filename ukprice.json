@@ -14,7 +14,7 @@
       "subtitleColor":"black"},
   
     "config": {
-        "background":"#eae7ddf0",
+        "background":"#eae7dd00",
         "view": {
           "stroke": "transparent"
         },
