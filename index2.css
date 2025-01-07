@@ -1,310 +1,67 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(to bottom, #F8F3F3, #F8F3F3); /* Sky to Sea gradient */
+}
 
-/* THIS IS THE CSS FOR INDEX 2 CHART_LIBRARY */
+/* Head Styling */
 head {
-    color:tomato;
-
+    color: tomato;
+    font-weight: 600;
 }
 
-/* This is for the chart library title */
+/* Chart Library Title */
 .big {
-    position: relative;
-    top: 4vh; 
-    left: 35%;
-    font-family: 'Exo', sans-serif;
-    font-size: 8vh;
-    
-}
-
-/* This is for all the paragraphs*/
-p {
-    position: absolute;
-    top: 51.5vh;
-    left: 0vw;
-    color: rgb(0, 0, 0);
+    margin: 4vh auto;
     width: 80%;
-    text-align: justify;
+    font-family: 'Exo', sans-serif;
+    font-size: 4vh;
+    text-align: center;
 }
 
-#text10 {
-    width:60%;
-}
-
-/* This is for all the headers*/
+/* Headers */
 h3 {
-    position: absolute; 
+    margin: 5vh 10vw;
     font-family: 'Exo', Barlow, monospace;
     font-size: 3vh;
     color: #000000;
 }
 
-h2 {
-    position: relative; 
-    left: 18vw;
-    font-family: 'Exo', sans-serif;
+/* Paragraphs */
+p {
+    margin: 5vh auto;
+    font-family: 'Nunito', Barlow, monospace;
     font-size: 2vh;
-    width: 70%;
-    color: #000000;
-}
-
-
-/* This is for everything within the External Chart embedding */ 
-  .chart-description {
-    position: relative;
-    top: 10vh;
-    left: 5vw;
-}
-#Location1 {
-    position: absolute;
-    top: 6vh;
-    left: -2vw;
-
-}
-#Location2 {
-    position: absolute;
-    top: 6vh;
-    left: 28vw;
-}
-
-
-/* This is for everything within the Chart creating */ 
-      .chart-description7 {
-        position: relative;
-        top: 10vh;
-        left: 65vw;
-    }
-    
-    #Location10 {
-            position: absolute;
-            top: 40vh;
-            left: 0vw;
-        }
-    
-    #Location11 {
-            position: absolute;
-            top: 6vh;
-            left: 0vw;
-        }
-
-
-
-/* Debating */
-.chart-description1 {
-    position: relative;
-    top: 80vh;
-    left: 5vw;
-}
-
-#innovation_chart{
-    position: absolute;
-    top: 8vh;
-    left: -1vw;
-    width: 30vw;
-    height: 40vh;
-}
-
-#Location9 {
-    position: absolute;
-    top: 8vh;
-    left: -1vw;
-    width: 37vw;
-    height: 40vh;
-}
-
-#Location7 {
-    position: absolute;
-    top: 8vh;
-    left: 39vw;
-}
-
-/* Re-create & improve */
-.chart-description2 {
-    position: relative;
-    top:164vh;
-    left: 5vw;
-}
-
-#chart_recreate {
-    position: absolute;
-    top: 8vh;
-    left: 30vw;
-    width: 30vw;
-    height: 35vh;
-}
-
-#original_chart {
-    position: absolute;
-    top: 8vh;
-    left: -2vw;
-    width: 30vw;
-    height: 35vh;
-}
-
-#improve_chart {
-    position: absolute;
-    top: 8vh;
-    left: 62vw;
-    width: 30vw;
-    height: 35vh;
-}
-
-#text_create {
-    position: absolute;
-    top: 45vh;
-    left: 0vw;
-}
-/* Scraper */
-.chart-description8 {
-    position: relative;
-    top: 220vh;
-    left: 5vw;
-}
-
-#sentiment_chart {
-    position: absolute;
-    top: 8vh;
-    left: 10vw;
-    height: 45vh;
-}
-
-
-
-
-
-/* Loop */
-.chart-description3 {
-    position: relative;
-    top: 290vh;
-    left: 5vw;
-}
-
-#loop {
-    position: absolute;
-    top: 8vh;
-    left: 1vw;
-    width: 80vw;
-    height: 65vh;
-}
-
-
-#text_loop {
-    position: absolute;
-    top: 78vh;
-    left: 5vw;
     color: rgb(0, 0, 0);
     width: 80%;
 }
 
-text-align {
-    left: 20px;
+/* General Text Block */
+h2 {
+    margin: 5vh 10vw;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2vh;
+    text-align: justify;
+    color: #000000;
 }
 
-
-
-/* R Chart */
-.chart-description4 {
-    position: relative;
-    top: 400vh;
-    left: 5vw;
+/* Chart Embedding Section */
+#chart_recreate, #original_chart, #improve_chart {
+    width: 30%;
+    height: auto;
+    margin: 2vh auto;
+    display: block;
 }
 
-#diagram_r {
-    position: absolute;
-    top: 8vh;
-    left: 1vw;
-    width: 30vw;
-    height: 50vh;
-}
-
-#text4 {
-    position: absolute;
-    top: 60vh;
-    left: 1vw;
-    color: rgb(0, 0, 0);
-    width: 32%;
-}
-
-#scraper_text{
-    position: absolute;
-    top: 10vh;
-    left: 50vw;
-    width:25%;
-}
-
-
-
-/* MAPS */
-.chart-description5 {
-    position: relative;
-    top: 400vh;
-    left: 40vw;
-}
-
-#Location3 {
-    position: absolute;
-    top: 6vh;
-    left: 0vw;
-}
-
-#Location4 {
-    position: absolute;
-    top: 45vh;
-    left: 0vw;
-}
-
-/* BIG DATA */
-.chart-description6 {
-    position: relative;
-    top: 510vh;
-    left: 5vw;
-}
-
-#Location8 {
-    position: absolute;
-    top: 6vh;
-    left: 0vw;
-}
-    
-#Location12 {
-    position: absolute;
-    top: 6vh;
-    left: 40vw;
-}
-
-#text6 {
-    width: 60vw;
-}
-
-/* Analytics*/
-.chart-description9 {
-    position: relative;
-    top: 600vh;
-    left: 5vw;
-}
-
-#Location13 {
-    position: absolute;
-    top: 6vh;
-    left: 0vw;
-}
-    
-#text6{
-    position: absolute;
-    top: 10vh;
-    left: 55vw;
-    width:25%;
-}
-
-
-
-
-
-
-
-/* Links and menu */
-.nav-link {
-    position: relative;
-    top: 30px;
-    right: 50px;
+/* Navbar Links */
+.nav-link, .nav-link1, .nav-link2, .nav-link3, .nav-link4 {
+    display: inline-block;
+    margin: 1vh 1vw;
     font-family: 'Barlow', Courier, monospace;
     text-decoration: none;
     padding: 10px 15px;
@@ -313,240 +70,87 @@ text-align {
     border-radius: 5px;
 }
 
-.nav-link1 {
-    position: relative;
-    top: 70px;
-    right: 50px;
-    font-family: 'Barlow', Courier, monospace;
-    text-decoration: none;
-    padding: 10px 19px;
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
-}
-
-.nav-link2 {
-    position: relative;
-    top: 120px;
-    right: 50px;
-    font-family: 'Barlow', Courier, monospace;
-    text-decoration: none;
-    padding: 1px 19px;
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
-}
-
-.nav-link3 {
-    position: relative;
-    top: 130px;
-    right: 50px;
-    font-family: 'Barlow', Courier, monospace;
-    text-decoration: none;
-    padding: 10px 19px;
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
-}
-
-.nav-link4 {
-    position: relative;
-    top: 0px;
-    right: 90px;
-    font-family: 'Barlow', Courier, monospace;
-    text-decoration: none;
-    padding: 1px 19px;
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
-}
-
-
-
-.links {
-    position: absolute;
-    top:58px;
-    left:20px;
-    color: #333;
-}
-
-.Introduction{
-    position: absolute;
-    top:250px;
-    color: #333
-}
-
-body, html {
-        margin: 0;
-        padding: 0;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        overflow-y: scroll;
-        scrollbar-width: none;
-        font-family: 'Nunito', sans-serif;
-        overflow-x: hidden;
-        height: 100vh;
-        background: linear-gradient(to bottom, #F8F3F3, #F8F3F3); /* Sky to Sea gradient */
-    }
-.scroll-indicator {
-    position: relative;
-    top: -1860px; /* Position above the bottom */
-    left: 50%;
-    transform: translateX(-50%) rotate(0deg);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: transform 0.3s ease; /* Smooth transition for the flip */
-}
-
-h5.sphere-text {
-    position: relative;
-    top: -30vh;
-    left: 42%;
-    display: inline-block;       /* Inline-block to keep the text within a rounded background */
-    padding: 1vh 1vw;          /* Padding to create space around the text */
-    background-color: #d3d3d3;   /* Light grey background */
-    border-radius: 20px;
-    font: 'Barlow';         /* Round corners to form a sphere-like appearance */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for a slight 3D effect */
-    font-size: 2vh;             /* Adjust font size as needed */
-    color: #333;                 /* Text color */
-    text-align: center;          /* Center the text */
-}
-
+/* Dropdown Menu */
 .dropdown {
     position: relative;
-    top: 10vh;
-    left:10vw;
-    display: inline-block;
-    z-index: 50;
-}
-
-.compass-icon {
-    width: 5vw; /* Adjust size as needed */
-    cursor: pointer;
-    transition: transform 0.6s ease; /* Optional: rotation effect on hover */
-}
-
-.compass-icon:hover {
-    transform: rotate(90deg); /* Optional: rotate on hover */
+    margin: 5vh 10vw;
+    z-index: 20;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 8vh; /* Adjust based on compass icon size */
-    left: -2.3vw;
-    background-color: #f9f9f900;
+    background-color: #fff;
     min-width: 150px;
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 5px;
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    transition: background-color 0.2s ease;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-/* Show the dropdown content on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-
-
-
-/* Where all the charts groups are */
-/* Inspired by Christina phm */
-.chart {
-    
+/* Interactive Charts */
+.interactive_charts, .interactive_charts1 {
     background-color: #eae7ddf0;
-    width: auto;
-    min-width: auto;
-    align-items: center;
+    margin: 2vh auto;
+    border: solid 1px #eae7ddf0;
+    border-radius: 2vh;
+    padding: 1vh;
+    display: flex;
     justify-content: center;
-    position:static;
-    margin-left: 10px;
-    margin-top: 10px;
-    border-style: solid;
-    border-color: #eae7ddf0; 
-    border-width: 1px;
-    border-radius: 30px;
-    text-align: center;
-    padding: 10px;
-    flex-flow: row wrap;
-    
-  }
-  
-  .chart:hover {
-      
-        transform: scale(1.06, 1.06);
-        transition: 1s;
-        
-      }
-  
+    align-items: center;
+}
 
-.chart1 {
-    
-        background-color: #fffffff0;
-        width: auto;
-        min-width: auto;
-        align-items: center;
-        justify-content: center;
-        position:static;
-        margin-left: 10px;
-        margin-top: 10px;
-        border-style: solid;
-        border-color: #eae7ddf0; 
-        border-width: 1px;
-        border-radius: 30px;
-        text-align: center;
-        padding: 10px;
-        flex-flow: row wrap;
-        
-      }
-      
-      .chart1:hover {
-          
-        transform: scale(1.06, 1.06);
-        transition: 1s;
-        
-      }
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .big {
+        font-size: 3vh;
+        width: 90%;
+    }
 
-.interactive_charts {
-    
-        background-color: #eae7ddf0;
-        width: auto;
-        min-width: auto;
-        align-items: center;
-        justify-content: center;
-        position:static;
-        margin-left: 10px;
-        margin-top: 10px;
-        border-style: solid;
-        border-color: #eae7ddf0; 
-        border-width: 1px;
-        border-radius: 30px;
-        text-align: center;
-        padding: 10px;
-        flex-flow: row wrap;
-        
-      }
+    h3, h2, p {
+        font-size: 2.5vh;
+        margin: 3vh 5vw;
+    }
+
+    #chart_recreate, #original_chart, #improve_chart {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .big {
+        font-size: 2.5vh;
+        width: 95%;
+    }
+
+    h3, h2, p {
+        font-size: 2vh;
+        margin: 2vh 3vw;
+    }
+
+    #chart_recreate, #original_chart, #improve_chart {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .big {
+        font-size: 2vh;
+    }
+
+    h3, h2, p {
+        font-size: 1.5vh;
+    }
+
+    .nav-link, .nav-link1, .nav-link2, .nav-link3, .nav-link4 {
+        padding: 5px 10px;
+        font-size: 1.5vh;
+    }
+}
+
 
 
 
