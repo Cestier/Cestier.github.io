@@ -1,0 +1,35 @@
+LOCATION,INDICATOR,Indicator,OBS_VALUE,UNIT_MEASURE
+FRA,SW_LIFS,Life satisfaction,6.7,AVSCORE
+USA,SW_LIFS,Life satisfaction,7.0,AVSCORE
+GBR,SW_LIFS,Life satisfaction,6.8,AVSCORE
+CHE,SW_LIFS,Life satisfaction,7.5,AVSCORE
+FRA,EQ_WATER,Water quality,78.0,PC
+USA,WL_EWLH,Employees working very long hours,10.4,PC
+GBR,WL_EWLH,Employees working very long hours,10.8,PC
+CHE,WL_EWLH,Employees working very long hours,0.4,PC
+DEU,WL_EWLH,Employees working very long hours,3.9,PC
+FRA,WL_EWLH,Employees working very long hours,7.7,PC
+USA,EQ_WATER,Water quality,88.0,PC
+GBR,EQ_WATER,Water quality,82.0,PC
+CHE,EQ_WATER,Water quality,96.0,PC
+FRA,PS_REPH,Homicide rate,0.4,RATIO
+USA,PS_REPH,Homicide rate,6.0,RATIO
+GBR,PS_REPH,Homicide rate,0.2,RATIO
+CHE,PS_REPH,Homicide rate,0.3,RATIO
+FRA,WL_TNOW,Time devoted to leisure and personal care,16.2,HOUR
+USA,WL_TNOW,Time devoted to leisure and personal care,14.57,HOUR
+GBR,WL_TNOW,Time devoted to leisure and personal care,14.94,HOUR
+FRA,HS_LEB,Life expectancy,82.9,YR
+USA,HS_LEB,Life expectancy,78.9,YR
+GBR,HS_LEB,Life expectancy,81.3,YR
+CHE,HS_LEB,Life expectancy,84.0,YR
+FRA,EQ_AIRP,Air pollution,11.4,MICRO_M3
+USA,EQ_AIRP,Air pollution,7.7,MICRO_M3
+GBR,EQ_AIRP,Air pollution,10.1,MICRO_M3
+CHE,EQ_AIRP,Air pollution,10.1,MICRO_M3
+DEU,SW_LIFS,Life satisfaction,7.3,AVSCORE
+DEU,EQ_WATER,Water quality,91.0,PC
+DEU,PS_REPH,Homicide rate,0.4,RATIO
+DEU,WL_TNOW,Time devoted to leisure and personal care,15.62,HOUR
+DEU,HS_LEB,Life expectancy,81.4,YR
+DEU,EQ_AIRP,Air pollution,12.0,MICRO_M3
