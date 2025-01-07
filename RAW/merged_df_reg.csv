@@ -1,0 +1,35 @@
+ISO3,RANK,ECONOMY_NAME,Tax_GDP_PCT,REG_UN
+AUT,18.0,Austria,42.7,Europe
+BEL,23.0,Belgium,42.6,Europe
+CAN,15.0,Canada,34.8,Northern America
+CHL,52.0,Chile,20.6,Latin America and the Caribbean
+COL,66.0,Colombia,22.2,Latin America and the Caribbean
+CRI,74.0,Costa Rica,24.9,Latin America and the Caribbean
+DNK,9.0,Denmark,43.4,Europe
+EST,16.0,Estonia,33.5,Europe
+FIN,6.0,Finland,42.5,Europe
+FRA,11.0,France,43.8,Europe
+DEU,8.0,Germany,38.1,Europe
+GRC,42.0,Greece,39.8,Europe
+HUN,35.0,Hungary,34.2,Europe
+ISL,20.0,Iceland,35.9,Europe
+IRL,22.0,Ireland,21.9,Europe
+ISR,14.0,Israel,29.8,Northern Africa and Western Asia
+ITA,26.0,Italy,42.8,Europe
+LVA,37.0,Latvia,31.9,Europe
+LTU,34.0,Lithuania,32.6,Europe
+LUX,21.0,Luxembourg,40.9,Europe
+MEX,58.0,Mexico,17.8,Latin America and the Caribbean
+NLD,7.0,Netherlands,38.5,Europe
+NZL,27.0,New Zealand,34.0,"South East Asia, East Asia, and Oceania"
+NOR,19.0,Norway,41.4,Europe
+POL,41.0,Poland,35.1,Europe
+PRT,30.0,Portugal,35.8,Europe
+KOR,10.0,Korea,28.9,"South East Asia, East Asia, and Oceania"
+SVN,33.0,Slovenia,36.9,Europe
+ESP,29.0,Spain,37.3,Europe
+SWE,2.0,Sweden,41.4,Europe
+CHE,1.0,Switzerland,27.1,Europe
+TUR,39.0,Türkiye,23.5,Northern Africa and Western Asia
+GBR,4.0,United Kingdom,35.3,Europe
+USA,3.0,United States,25.2,Northern America
