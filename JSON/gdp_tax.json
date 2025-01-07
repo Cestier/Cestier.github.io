@@ -1,0 +1,106 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "How do tax rates affect innovation?",
+    "fontSize": 20,
+    "subtitle": "Regression of innovation rank on tax rates in 2023. Source: GII, OECD",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "RAW/merged_df_reg.csv",
+    "format": {"type": "csv"}
+  },
+  "height": 225,
+  "width": 460,
+  "background":"#eae7dd00",
+  "layer": [
+    {
+      "params": [
+        {
+          "name": "region",
+          "select": {"type": "point", "fields": ["REG_UN"]},
+          "bind": "legend"
+        }
+      ],
+      "mark": {"type": "point"},
+      "encoding": {
+        "x": {
+          "field": "Tax_GDP_PCT",
+          "type": "quantitative",
+          "title": "Taxes as % of GDP",
+          "axis": {"grid": false},
+          "scale": {
+            "domain": [15, 50] 
+          }
+        },
+        "y": {
+          "field": "RANK",
+          "type": "quantitative",
+          "title": "Innovation Rank",
+          "axis": {"grid": false}
+        },
+        "color": {
+          "field": "REG_UN",
+          "scale": {"scheme": "dark2"},
+          "type": "nominal",
+          "title": "Region",
+          "legend": {
+            "orient": "none",
+            "legendX": 350,  
+            "legendY": 40,
+            "fillColor": "#eae7dd00", 
+            "padding": 2,
+            "cornerRadius": 5,
+            "labelFontSize": 8, 
+            "titleFontSize": 9 
+        }
+        },
+        "opacity": {"condition": {"param": "region", "value": 1}, "value": 0.2},
+        "tooltip": [
+          {"field": "ECONOMY_NAME", "type": "nominal", "title": "Country"},
+          {"field": "REG_UN", "type": "nominal", "title": "Region"},
+          {
+            "field": "Tax_GDP_PCT",
+            "type": "quantitative",
+            "title": "Taxes as % of GDP"
+          },
+          {
+            "field": "RANK",
+            "type": "quantitative",
+            "title": "Innovation Rank"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "#776bcd"},
+      "transform": [{"regression": "RANK", "on": "Tax_GDP_PCT"}],
+      "encoding": {
+        "x": {"field": "Tax_GDP_PCT", "type": "quantitative"},
+        "y": {"field": "RANK", "type": "quantitative"}
+      }
+    },
+    {
+      "transform": [
+        {"regression": "RANK", "on": "Tax_GDP_PCT", "params": true},
+        {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "mark": {
+        "type": "text",
+        "color": "#776bcd",
+        "x": 390,
+        "align": "right",
+        "y": 5
+      },
+      "encoding": {"text": {"type": "nominal", "field": "R2"}}
+    }
+  ],
+  "config": {    "view": {
+    "stroke": "transparent"
+  },
+  "font": "Exo"
+}
+}

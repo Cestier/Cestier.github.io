@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index3.css">
-    <title>Chart Library</title>
+    <title>Finistere</title>
 
     <!-- Vega and Vega-Lite libraries for chart embedding -->
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
@@ -18,16 +18,117 @@
 
     <!-- Navigation links -->
     <div class="dropdown">
-        <img src="compass.png" alt="Compass" class="compass-icon">
+        <img src="PICS/compass.png" alt="Compass" class="compass-icon">
         <div class="dropdown-content">
             <a href="index2.html" >Portfolio Page</a>
-            <a href="index3.html" >Project Page</a>
-            <a href="index4.html" >Swiss Project</a>
+            <a href="index.html" >Home Page</a>
         </div>
     </div>
-    <h1 class="big">Project: Finistere</h1>
-    <h5 class="sphere-text">Work in progress</h5>
+    <h1 class="big">Finistere:<br> A Data Science Exploration of European Competitiveness
+    </h1>
+
+
+
     <!-- First Chart Section -->
+
+<h2 class="introduction">What explains the innovation gap between the United States and Europe ? Finistere, meaning "end of the earth," takes its name from two westernmost locations in Europe: Finistère in France and Cabo Finisterre in Spain. This frontier inspired risk-taking european explorers who pushed boundaries, spurring Europe’s rise as a hub of innovation and discovery. However, these advances were not without their darker chapters, marked by conquest and colonization.
+    <br>Today, Europe faces a different challenge: a perception of stagnation. As global innovation accelerates, Europe is falling behind, overshadowed by major powers such as the United States and China. Finistere is my attempt to visualize and understand this gap, an exploration driven by data to provoke thought and inspire a much-needed revitalization of European industry.
+    This project draws inspiration from Mario Draghi's groundbreaking paper, 'The Future of European Competitiveness' (henceforth mentioned as the Draghi report).
+</h2>
+
+<h3> 1. How big is the gap? 
+<p> Across both Cabo Finisterre and Finistère lies North America, and specifically the United States (US) with which Europe shares an ambiguous relationship. 
+    Over the past 20 years, the US has outpaced the EU in nearly all economic metrics, of which the GDP and private sector valuations are valuable performance indicators. 
+    <br> About the chart: The Draghi report opens by showing systematic economic indicators difference between the US and EU, most rely on OECD, EUROstat or World Bank data. GDP data was accessible 
+    and up to date. I struggled to add custom made arrows to show that while EU's GDP increase 10%, both China's and the US' increase by 16%. The Müller-Lyer illusion here comes to mind as a limitation of my chart, with the horizontal lines being misinterpreted. 
+    This was made through package Seaborn of which I am most comfortable with when designing custom charts. 
+</p>
+<img class = "interactive_charts" id= "improve_chart" src="PICS/improve_chart.png" alt="Description of image" width="607" >
+<p id = "link"> </p>
+</h3>
+
+
+<h3 id="start-up"> 2. The Start-up move to the US 
+    <p> Europe's struggle to scale tech start-ups into global giants is a clear symptom of what German economist Herbert Giersch called 'Eurosclerosis', a state of economic stagnation compared to the dynamic growth of the U.S. 
+
+        One significant factor is start-up migration. According to the paper 'Venture Capital and the International Relocation of Startups' (Achleitner et al), 6% of start-ups relocate across borders, and a staggering 85% of those move to the US, taking talent and capital with them. Between 2008 and 2021, nearly 30% of Europe’s unicorns left the bloc due to scaling barriers. 
+        
+        The long-term impact is stark: in the past five decades, no EU company worth over $110 billion has been created from scratch. Of the seven trillion-dollar tech companies worldwide, none are European, all are American.  
+        <br> About the chart: Since the paper did not make data readily available, very difficult here was scraping the data from table form and cleaning it correctly. I was inspired to make a Sankey diagram inspired by a Financial 
+        Times' one about Emmanuel Macron's shifting political base. I aimed to convey the huge drain of talent and capital from Europe to the US. The paper did not have 
+        any charts or diagram on this drain. This was done through plotly, giving much interactivity to the flow. Unfortunately, I could not manage to better 
+        improve the customization of the chart to make it clearer. A better way of doing so could have been with a map as often used when visualising migrations however I believe this 
+        undermined the possibility of showing inter european state startup movement. 
+    </p>
+    <iframe class = "interactive_charts1" id="sankey" src="/PICS/sankey_chart.html" 
+    style="width: 100%; height: 600px; border: none;">
+</iframe>
+    <p id = "link"> </p>
+    </h3>
+
+<h3 id="tax"> 3. Tax & Regulatory burden
+    <p> Discussions about European economic stagnation often circle back to two key themes: the burden of taxes and regulation. As highlighted in the Draghi report, 
+        “inconsistent and restrictive regulations” play a significant role in 'Eurosclerosis'. 
+        Since 2019, the EU has passed approximately 13,000 pieces of legislation, compared to just 3,500 laws and 2,000 resolutions in the US
+        In the analysis below, I explore the relationship between tax burdens, regulatory complexity, and innovation rankings using simple linear regression. 
+        These visualizations aim to shed light on how governance frameworks might be impacting Europe's ability to foster innovation.
+        <br> About the charts: Those are among my favorite charts, turning out both clear and informational. I was inspired by a past project on tax rates 
+     which helped me overcome the struggle of making the regression line together with the scatter plot. Cleaning the innovation data incoming from the GII  
+     and correctly merging the data was easier than expected, luckily I noticed early that 'Rep of Korea' vs 'South Korea' or 'United States of America' vs 'United States' were not matched. 
+    </p>
+    <figure class = "interactive_charts" id="Location9"></figure>
+    <figure class = "interactive_charts" id="Location7"></figure>
+    <p id = "link"> </p>
+    </h3>
+
+<h3 id="life"> 4. Hopes for Europe: Quality of life & Climate Tech 
+        <p> Amid concerns about Europe’s economic future, there are two undeniable strengths: quality of life and leadership in climate technology. For example, European cities consistently top 
+            the Economist Intelligence Unit's liveability rankings, making them attractive destinations for global talent.I initially tried to represent this quality of life gap 
+            with cities but the comprehensive data is reserved to clients of EIU. Using OECD data, my quality-of-life heatmap wants to show that despite 
+            boasting impressive economic performance, the US face high homicide rates and a greater work-life imbalance. This raises the important question whether relentless 
+            competitiveness is truly the ultimate goal?
+            Also, Europe’s advancements in clean technologies offer a foundation for boosting its global competitiveness. The industry location map below, inspired by a similar visualization in the Draghi report, highlights key hubs driving clean technologies and a greener transition. 
+            These strengths in sustainable growth can lead to better digitization, electrification, and energy efficiency. 
+            <br> About the charts: The hardest part here was to choose which countries could compare best with the US (population, cultural, innovation, gun ownership), and 
+            having to change the sign for certain indicators (when satisfaction observation value increases it should be green but when homicide increases, it should be red). 
+        </p>
+        <figure class = "interactive_charts" id="Location4"></figure>
+        <figure class = "interactive_charts" id="Location10"></figure>
+        <p id = "link"> </p>
+        </h3>
+
+        <div id ="box" ></div>
+
+
+
+        <h3 id="conclusion1"> Conclusion  </h3>
+        <h2 class="conclusion">
+            
+            Frustrated by the growing acceptance of  Europe's lag compared to US innovation, I turned to visualizations to uncover several relationships. The causes of 'Eurosclerosis' go far beyond those few relationships, a web of complex factors that includes limited natural energy resources, overlapping regulatory frameworks, linguistic diversity, and the absence of a unified market to cite a few.
+
+            Culture also plays a role that is very difficult to capture with data visualisations. It’s often said that Americans are less risk-averse and save less, contributing to a more dynamic entrepreneurial environment. I attempted to scrape news articles for associations between "European" and terms like "safety," "risk-averse," and "cautious." However, the analysis proved too cumbersome, and the data difficult to support. 
+            For those interested,<a href="https://ourworldindata.org/grapher/cross-country-variation-in-risk-taking" target="_blank"> Our World in Data. </a> provides one clear visualization of such cultural differences. 
+            If risk aversion truly contributes to Europe's stagnation, perhaps Europeans should look to Finistere, a place where European explorers once believed the world ended, until they dared to prove otherwise.        
+        </h2>
+    
+    <script>
+        
+        const figure_5_spec = "JSON/gdp_tax.json";
+        vegaEmbed('#Location7', figure_5_spec);
+
+        const figure_7_spec = "JSON/ease_of_b.json";
+        vegaEmbed('#Location9', figure_7_spec);
+
+        const figure_10_spec = "JSON/heatmap.json";
+        vegaEmbed('#Location10', figure_10_spec);
+
+        const figure_4_spec = "JSON/europeclean.json";
+        vegaEmbed('#Location4', figure_4_spec);
+    </script>
+    </script>
+
+ 
+
 
 </body>
 </html>

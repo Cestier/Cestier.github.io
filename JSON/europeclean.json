@@ -8,6 +8,7 @@
   },
   "title": {
     "text": "Map of European Clean Technology",
+    "subtitleFontStyle": "italic",
     "subtitle": ["Source: Bruegel 2024"]
   },
    "config": {
@@ -15,7 +16,7 @@
     "view": {
           "stroke": "transparent"
         },
-        "font": "Barlow"
+        "font": "Exo"
       },
   "projection": {"type": "naturalEarth1"},
   "layer": [

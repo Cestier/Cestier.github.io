@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "UK Productivity",
+    "anchor": "start",
+    "subtitle": "Output per hour, Index, base year = 100 | Source: ONS through ECO API",
+    "font": "Exo",
+    "subtitleFont": "Exo", 
+    "fontSize": "14",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 9,
+    "color": "#000000",
+    "subtitleColor": "#000000"
+  },
+  "height": "250",
+  "width": "300",
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "background": "#eae7dd00",
+  "view": {
+    "fill": "#eae7dd00",
+    "strokeOpacity": 0
+  },
+  "data": {
+    "url": "https://api.economicsobservatory.com/gbr/prod?vega",
+    "format": {
+      "type": "json"
+    }
+  },
+  "mark": {
+    "type": "area",
+    "color": "#776bcd",
+    "strokeWidth": "2"
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": {
+        "title": "",
+        "titleColor": "#122B39",
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "axis": {
+        "title": "",
+        "titleColor": "#122B39",
+        "grid": false
+      }
+    }
+  }
+}

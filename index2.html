@@ -20,25 +20,39 @@
     <div class="dropdown">
         <img src="PICS/compass.png" alt="Compass" class="compass-icon">
         <div class="dropdown-content">
-            <a href="index.html" >Portfolio Page</a>
-            <a href="index3.html" >Project Page</a>
-            <a href="index4.html" >Swiss Project</a>
+            <a href="index3.html" >Project</a>
+            <a href="index.html" >Home Page</a>
         </div>
+    </div>
     </div>
 
     <h1 class="big">Chart Library</h1>
-    <h5 class="sphere-text">Work in progress</h5>
-    <!-- First Chart Section -->
+
+    <!-- First Chart Section --> 
     <section>
         <div class="chart-description">
-            <h3>1. External Chart Embedding</h3>
-            <p> 
-                I embedded these charts from the Economic Observatory while adapting them to my 
-                own visualisation flavor. Some would be ready to trade today's technology for the £1 pint of bitter ! <br>  To read more about them, 
-                refer to <a href="https://www.economicsobservatory.com/" target="_blank">Economic Observatory.</a>  
+            <h3>1. External Chart Embedding (CC1)</h3>
+            <p id = text10 > 
+                (top) I embedded these charts from the Economic Observatory while adapting them to my 
+                own visualisation profile. Some would certainly be ready to trade today's technology to return to the £1 pint of bitter !  To read more about them, 
+                refer to <a href="https://soundcloud.com/economics-observatory/under-performing-how-can-we-boost-britains-low-productivity?si=f756b86d619b4988b77f7bbdaaf7318f&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">Festival of Economics.</a>
+                <br> (right) Charts created through the Economics Observatory handy chart tool.  
+
             </p>
             <figure class = "chart" id="Location1"></figure>
             <figure class = "chart" id="Location2"></figure>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="chart-description7">
+            <h3>2. Creating (CC2)</h3>
+            <p> 
+ 
+            </p>
+            <figure class = "chart" id="Location10"></figure>
+            <figure class = "chart" id="Location11"></figure>
         </div>
     </section>
 
@@ -47,27 +61,33 @@
     <!-- Second Chart Section -->
     <section>
         <div class="chart-description1">
-            <h3>2. Debating</h3>
+            <h3>3. Debating (CC3) </h3>
             <p> 
-            There has been many mentions of bureaucracy slowing or obstructing innovation. Here I was interested in seeing whether charts could provide some light on the story. 
+            Among many of the subjects discussed at the Festival of Economics was the sense of losing innovation in the UK due to too much bureaucracy, and high taxes. 
+            This isn't a new argument, but it is one that is gaining traction as one that is mentioned everywhere to justify Europe's lag. I was interested in seeing whether charts could provide some light on the story.
+             Here I was interested in seeing whether charts could provide some light on the story. This is no where comprehesive enough and only a starting point. I'd like to include data 
+             about legislation burden in absolute numbers. To listen to the podcast
+             refer to <a href="https://www.economicsobservatory.com/" target="_blank">Economic Observatory.</a> https://www.economicsobservatory.com/festival-of-economics-2024
             </p>
-            <img class = "chart" id= "innovation_chart" src="PICS/innovation_bus.png" alt="Description of image" width="607" >
-            <figure class = "chart" id="Location7"></figure>
+            <figure class = "interactive_charts" id="Location9"></figure>
+            <figure class = "interactive_charts" id="Location7"></figure>
         </div>
         
     </section>
 
     <section>
         <div class="chart-description2">
-            <h3>3. Embed, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <h3>4. Embed, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                    Re-create, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Improve</h3>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Improve (CC4)</h3>
             <p id= "text_create">
-                Chart on the left re-creation of the GDP evolution chart. The original chart is on the right, 
-                and the improved chart is on the left. The improved chart has a better color scheme, font, and 
-                overall design. 
+                The chart on the left is the original visualization from Mario Draghi's report on European Competitiveness. I found it 
+                lacking clarity and visual appeal, with minimal use of color making it less engaging. In the middle,
+                 I replicated the graph using Python's Seaborn library, experimenting with a different style to convey the same message. 
+                 The enhanced chart on the right features an improved color palette, font selection, and overall design. However, it has a limitation: our perception can struggle to distinguish closely 
+                 positioned horizontal lines due to the Müller-Lyer illusion.
             </p>
             <img class = "chart1" id= "chart_recreate" src="PICS/gdp_evolution.png" alt="Description of image" width="600">
             <img class = "chart1" id= "original_chart" src="PICS/report.png" alt="Description of image" width="607" >
@@ -75,13 +95,26 @@
         </div>
         
     </section>
-
+    <section>
+        <div class="chart-description8">
+            <h3>5. Scraper (CC5) </h3>
+            <p id = scraper_text >
+                             Understanding the sentiment behind key speeches can be of great interest for policy makers.
+             By using a combination of Beautiful soup to parse over the latest Federal Reserve Chairman Jerome Powell speech 
+             and NLTK sentiment analysis, this bar chart can provide us with insight on the FED's economic outlook. The speech in question was Powell's Nov 14 speech. Note that while 
+             BeautifulSoup was simple to administer, I relied heavily on generative AI and internet sources to understand sentiment analysis over which I encountered several technical issues. 
+             For further understanding this is my <a href="https://colab.research.google.com/drive/1k432XVplh8u3Dz1Nh7qiudYNM_QtIBWQ?usp=sharing" target="_blank"> Google colab. </a> 
+            </p>
+            <img class = "chart1" id= "sentiment_chart" src="PICS/sentiment_chart.png" alt="Description of image" width="500">
+        </div>
+    </section>
 
     <section>
         <div class="chart-description3">
-            <h3>4. Dashboard with Loop </h3>
-            <p> 
-                
+            <h3>6. Dashboard with Loop (CC6) </h3>
+            <p id= "text_loop"> 
+            Using a loop to batch download from World Bank and Global Innovation Index APIs, I was able to 
+            create a large dashboard to follow how several countries' innovation index has shifted throughout the years. The analysis can be found in my  <a href="https://colab.research.google.com/drive/1hBXPYNlxir8L323cfVowh3He2B7w8cAj?usp=sharing" target="_blank">Google Colab.</a> 
             </p>
             <img class = "chart" id= "loop" src="PICS/loopdashboard.png" alt="Description of image" >
         </div>
@@ -89,10 +122,14 @@
 
     <section>
         <div class="chart-description4">
-            <h3>5. R based Diagram </h3>
+            <h3>. R based Diagram (Other) </h3>
             <p id= "text4"> 
-            This represents the outflow and inflow of student studying abroad either as part of exchange programs or to study abroad. Anglo-saxon countries are considred the most attractive 
-
+            (top) This Circular migration plot is a past project I conducted measuring outflow and inflow of student studying abroad either as part of exchange programs or to study abroad. Source: UNESCO.  
+            I removed countries which had too strong of inflow or outflow such as China, and India. (outflow of Chinese students towards
+            the United States occupied the major part of the graph). It is interesting to note how anglo-saxon countries are by far considered the most attractive and how often the closer 
+            culturally, the more exchanges go both ways. <br> (right) These are charts of Europe showing regional differences in GDP per capita as well as facilities of clean technologies. 
+            The map on clean technology is inspired by a similar map in Mario Draghi's report on <a href="https://commission.europa.eu/topics/strengthening-european-competitiveness/eu-competitiveness-looking-ahead_en" target="_blank">Europe competitiveness.</a>  
+            
             </p>
             <img class = "chart1" id= "diagram_r" src="PICS/Rplot_LV.png" alt="Description of image" width="607" >
         </div>
@@ -101,7 +138,7 @@
 
     <section>
         <div class="chart-description5">
-            <h3>6. Maps </h3>
+            <h3>7. Maps (CC7) </h3>
             <p id= "text5"> 
             
             </p>
@@ -110,7 +147,31 @@
         </div>
     </section>
 
+    <section>
+        <div class="chart-description6">
+            <h3>8. Big Data (CC8) </h3>
+            <p id= "text5"> 
+            In the US, the largest producer of corn in the world, less than 2% of corn is used for direct human consumption while 35% is used for
+            animal feed (World Resources Institute). In mid 2022, corn futures increased to the highest price levels with only 2012 reaching close.
+           Curious to investigate whether the increase of corn prices would impact direct corn products less than it would for meat products. To do so, I used the micro-price 
+           data and averaged the price from meat products (i.e Frozen Beefburgers, chicken breast, meat pie, canned meat and more), and corn products (i.e corn snack, canned sweetcorn, cinema popcorn). 
+           I then used data from FRED on corn prices. The difficulty here was in choosing which products to include which remains very subjective to superficial 
+           research on what products contain. More on the process can be found <a href="https://colab.research.google.com/drive/1p1-hEWuN6j_jYNje7uaXqETXM1CKXkTK?usp=sharing" target="_blank">here.</a>
+            </p>
+            <figure class = "chart" id="Location8"></figure>
+            <figure class = "chart" id="Location12"></figure>
+        </div>
+    </section>
 
+    <section>
+        <div class="chart-description9">
+            <h3>9. Analytics (CC9) </h3>
+            <p id= "text6"> 
+                The hardest part here was to choose which countries could compare best with the US (population, cultural, innovation, gun ownership), and having to change the sign for certain indicators (when satisfaction observation value increases it should be green but when homicide increases, it should be red).
+            </p>
+            <figure class = "interactive_charts" id="Location13"></figure>
+        </div>
+    </section>
 
     <!-- Embed Vega charts with JavaScript -->
     <script>
@@ -128,8 +189,26 @@
         const figure_4_spec = "JSON/europeclean.json";
         vegaEmbed('#Location4', figure_4_spec);
         
-        const figure_5_spec = "JSON/final_chart.json";
+        const figure_5_spec = "JSON/gdp_tax.json";
         vegaEmbed('#Location7', figure_5_spec);
+
+        const figure_6_spec = "JSON/corn_prices.json";
+        vegaEmbed('#Location8', figure_6_spec);
+
+        const figure_10_spec = "JSON/meat_corn.json";
+        vegaEmbed('#Location12', figure_10_spec);
+
+        const figure_7_spec = "JSON/ease_of_b.json";
+        vegaEmbed('#Location9', figure_7_spec);
+
+        const figure_8_spec = "JSON/building.json";
+        vegaEmbed('#Location10', figure_8_spec);
+
+        const figure_9_spec = "JSON/building2.json";
+        vegaEmbed('#Location11', figure_9_spec);
+
+        const figure_11_spec = "JSON/heatmap.json";
+        vegaEmbed('#Location13', figure_11_spec);
     </script>
     </script>
 

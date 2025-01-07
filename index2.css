@@ -2,7 +2,7 @@
 /* THIS IS THE CSS FOR INDEX 2 CHART_LIBRARY */
 head {
     color:tomato;
-    font_weight: 600;
+
 }
 
 /* This is for the chart library title */
@@ -18,13 +18,16 @@ head {
 /* This is for all the paragraphs*/
 p {
     position: absolute;
-    top: 50vh;
+    top: 51.5vh;
     left: 0vw;
     color: rgb(0, 0, 0);
-    width: 51%;
+    width: 80%;
+    text-align: justify;
 }
 
-
+#text10 {
+    width:60%;
+}
 
 /* This is for all the headers*/
 h3 {
@@ -63,12 +66,32 @@ h2 {
 }
 
 
+/* This is for everything within the Chart creating */ 
+      .chart-description7 {
+        position: relative;
+        top: 10vh;
+        left: 65vw;
+    }
+    
+    #Location10 {
+            position: absolute;
+            top: 40vh;
+            left: 0vw;
+        }
+    
+    #Location11 {
+            position: absolute;
+            top: 6vh;
+            left: 0vw;
+        }
+
+
 
 /* Debating */
 .chart-description1 {
     position: relative;
-    top: 3vh;
-    left: 64vw;
+    top: 80vh;
+    left: 5vw;
 }
 
 #innovation_chart{
@@ -79,17 +102,24 @@ h2 {
     height: 40vh;
 }
 
+#Location9 {
+    position: absolute;
+    top: 8vh;
+    left: -1vw;
+    width: 37vw;
+    height: 40vh;
+}
 
 #Location7 {
     position: absolute;
-    top: 65vh;
-    left: -62vw;
+    top: 8vh;
+    left: 39vw;
 }
 
 /* Re-create & improve */
 .chart-description2 {
     position: relative;
-    top:137vh;
+    top:164vh;
     left: 5vw;
 }
 
@@ -122,11 +152,28 @@ h2 {
     top: 45vh;
     left: 0vw;
 }
+/* Scraper */
+.chart-description8 {
+    position: relative;
+    top: 220vh;
+    left: 5vw;
+}
+
+#sentiment_chart {
+    position: absolute;
+    top: 8vh;
+    left: 10vw;
+    height: 45vh;
+}
 
 
+
+
+
+/* Loop */
 .chart-description3 {
     position: relative;
-    top: 190vh;
+    top: 290vh;
     left: 5vw;
 }
 
@@ -139,6 +186,14 @@ h2 {
 }
 
 
+#text_loop {
+    position: absolute;
+    top: 78vh;
+    left: 5vw;
+    color: rgb(0, 0, 0);
+    width: 80%;
+}
+
 text-align {
     left: 20px;
 }
@@ -148,7 +203,7 @@ text-align {
 /* R Chart */
 .chart-description4 {
     position: relative;
-    top: 280vh;
+    top: 400vh;
     left: 5vw;
 }
 
@@ -164,14 +219,23 @@ text-align {
     position: absolute;
     top: 60vh;
     left: 1vw;
-    color: white;
+    color: rgb(0, 0, 0);
     width: 32%;
 }
+
+#scraper_text{
+    position: absolute;
+    top: 10vh;
+    left: 50vw;
+    width:25%;
+}
+
+
 
 /* MAPS */
 .chart-description5 {
     position: relative;
-    top: 280vh;
+    top: 400vh;
     left: 40vw;
 }
 
@@ -187,7 +251,55 @@ text-align {
     left: 0vw;
 }
 
+/* BIG DATA */
+.chart-description6 {
+    position: relative;
+    top: 510vh;
+    left: 5vw;
+}
+
+#Location8 {
+    position: absolute;
+    top: 6vh;
+    left: 0vw;
+}
     
+#Location12 {
+    position: absolute;
+    top: 6vh;
+    left: 40vw;
+}
+
+#text6 {
+    width: 60vw;
+}
+
+/* Analytics*/
+.chart-description9 {
+    position: relative;
+    top: 600vh;
+    left: 5vw;
+}
+
+#Location13 {
+    position: absolute;
+    top: 6vh;
+    left: 0vw;
+}
+    
+#text6{
+    position: absolute;
+    top: 10vh;
+    left: 55vw;
+    width:25%;
+}
+
+
+
+
+
+
+
 /* Links and menu */
 .nav-link {
     position: relative;
@@ -312,7 +424,7 @@ h5.sphere-text {
 .dropdown {
     position: relative;
     top: 10vh;
-    left:-49vw;
+    left:10vw;
     display: inline-block;
     z-index: 50;
 }
@@ -356,6 +468,10 @@ h5.sphere-text {
     display: block;
 }
 
+
+
+
+/* Where all the charts groups are */
 /* Inspired by Christina phm */
 .chart {
     
@@ -407,7 +523,30 @@ h5.sphere-text {
       
       .chart1:hover {
           
-            transform: scale(1.06, 1.06);
-            transition: 1s;
-            
-          }
+        transform: scale(1.06, 1.06);
+        transition: 1s;
+        
+      }
+
+.interactive_charts {
+    
+        background-color: #eae7ddf0;
+        width: auto;
+        min-width: auto;
+        align-items: center;
+        justify-content: center;
+        position:static;
+        margin-left: 10px;
+        margin-top: 10px;
+        border-style: solid;
+        border-color: #eae7ddf0; 
+        border-width: 1px;
+        border-radius: 30px;
+        text-align: center;
+        padding: 10px;
+        flex-flow: row wrap;
+        
+      }
+
+
+

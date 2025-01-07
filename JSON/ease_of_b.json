@@ -1,0 +1,106 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Easier business leads to more innovation",
+      "fontSize": 20,
+      "subtitle": "Regression of innovation on business index in 2023. Source: GII, WB",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "data": {
+      "url": "RAW/ease_business_df.csv",
+      "format": {"type": "csv"}
+    },
+    "height": 230,
+    "width": 350,
+    "background":"#eae7dd00",
+    "layer": [
+      {
+        "params": [
+          {
+            "name": "region",
+            "select": {"type": "point", "fields": ["REG_UN"]},
+            "bind": "legend"
+          }
+        ],
+        "mark": {"type": "point"},
+        "encoding": {
+          "x": {
+            "field": "Ease_of_b",
+            "type": "quantitative",
+            "title": "Ease of Business index (higher = easier)",
+            "axis": {"grid": false},
+            "scale": {
+              "domain": [50, 100] 
+            }
+          },
+          "y": {
+            "field": "innovation",
+            "type": "quantitative",
+            "title": "Innovation Rank (lower = more innovation)",
+            "axis": {"grid": false}
+          },
+          "color": {
+            "field": "REG_UN",
+            "scale": {"scheme": "dark2"},
+            "type": "nominal",
+            "title": "Region",
+            "legend": {
+              "orient": "none",
+              "legendX": 300,  
+              "legendY": 40,
+              "fillColor": "#eae7dd00", 
+              "padding": 2,
+              "cornerRadius": 5,
+              "labelFontSize": 8, 
+              "titleFontSize": 9 
+          }
+          },
+          "opacity": {"condition": {"param": "region", "value": 1}, "value": 0.2},
+          "tooltip": [
+            {"field": "country", "type": "nominal", "title": "Country"},
+            {"field": "REG_UN", "type": "nominal", "title": "Region"},
+            {
+              "field": "Ease_of_b",
+              "type": "quantitative",
+              "title": "Ease of Business Score"
+            },
+            {
+              "field": "innovation",
+              "type": "quantitative",
+              "title": "Innovation Score"
+            }
+          ]
+        }
+      },
+      {
+        "mark": {"type": "line", "color": "#776bcd"},
+        "transform": [{"regression": "innovation", "on": "Ease_of_b"}],
+        "encoding": {
+          "x": {"field": "Ease_of_b", "type": "quantitative"},
+          "y": {"field": "innovation", "type": "quantitative"}
+        }
+      },
+      {
+        "transform": [
+          {"regression": "innovation", "on": "Ease_of_b", "params": true},
+          {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+        ],
+        "mark": {
+          "type": "text",
+          "color": "#776bcd",
+          "x": 390,
+          "align": "right",
+          "y": 5
+        },
+        "encoding": {"text": {"type": "nominal", "field": "R2"}}
+      }
+    ],
+    "config": {    "view": {
+      "stroke": "transparent"
+    },
+    "font": "Exo"
+  }
+  }

@@ -8,14 +8,15 @@
   },
   "title": {
     "text": "Europe - GDP per capita",
-    "subtitle": ["Source: World Bank"]
+    "subtitle": ["Source: World Bank"],
+    "subtitleFontStyle": "italic"
   },
   "config": {
     "background":"#eae7dd00",
     "view": {
           "stroke": "transparent"
         },
-        "font": "Barlow"
+        "font": "Exo"
       },
   "projection": {"type": "naturalEarth1"},
   "layer": [

@@ -1,0 +1,73 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Startup Origin to Final Location Sankey Diagram",
+    "data": {
+        "values": [
+            {
+                "Origin_location": "AT",
+                "Final_location": "BE",
+                "Value": 0.0
+            },
+
+            {
+                "Origin_location": "SE",
+                "Final_location": "US",
+                "Value": 28.0
+            }
+        ]
+    },
+    "mark": "rule",
+    "encoding": {
+        "opacity": {
+            "value": 0.8
+        },
+        "color": {
+            "field": "Origin_location",
+            "type": "nominal",
+            "scale": {
+                "scheme": "category20"
+            }
+        },
+        "tooltip": [
+            {
+                "field": "Origin_location",
+                "type": "nominal",
+                "title": "Origin"
+            },
+            {
+                "field": "Final_location",
+                "type": "nominal",
+                "title": "Destination"
+            },
+            {
+                "field": "Value",
+                "type": "quantitative",
+                "title": "Value"
+            }
+        ]
+    },
+    "layer": [
+        {
+            "mark": {
+                "type": "rule",
+                "strokeWidth": 2
+            },
+            "encoding": {
+                "x": {
+                    "field": "Origin_location",
+                    "type": "nominal",
+                    "axis": {
+                        "title": "Origin"
+                    }
+                },
+                "x2": {
+                    "field": "Final_location"
+                },
+                "y": {
+                    "field": "Value",
+                    "type": "quantitative"
+                }
+            }
+        }
+    ]
+}

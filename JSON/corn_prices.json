@@ -1,0 +1,54 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Does historic corn price increase impact corn products...",
+      "fontSize": 20,
+      "subtitle": "Rescaled Real prices (purple) for comparison",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "data": {
+      "url": "RAW/corn_data_df.csv",
+      "format": {"type": "csv"}
+    },
+    "width": 300,
+    "height": 260,
+    "background": "#eae7dd00",
+    "mark": {"type": "line"},  
+    "encoding": {
+      "x": {
+        "field": "quote_date",
+        "type": "temporal",
+        "title": "Month",
+        "axis": {"grid": false}
+      },
+      "y": {
+        "field": "price",
+        "type": "quantitative",
+        "title": "Price",
+        "scale": {"domain": [0, 10]},  
+        "axis": {"grid": false}
+      },
+      "color": {
+        "field": "observation",
+        "type": "nominal",
+        "scale": {
+          "domain": ["real_corn_price", "corn_prod_price"],
+          "range": ["#a57c1b", "#ffb400", "#776bcd"]
+        },
+        "title": "Product"
+      },
+      "tooltip": [
+        {"field": "observation", "type": "nominal", "title": "Product"},
+        {"field": "price", "type": "quantitative", "title": "Price"},
+        {"field": "quote_date", "type": "temporal", "title": "Month"}
+      ]
+    },
+    "config": {
+      "view": {"stroke": "transparent"},
+      "font": "Exo"
+    }
+  }
+  

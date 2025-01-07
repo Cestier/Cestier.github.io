@@ -18,7 +18,7 @@
         "view": {
           "stroke": "transparent"
         },
-        "font": "Barlow"
+        "font": "Exo"
       },
     
     "data": {"url": "https://raw.githubusercontent.com/RDeconomist/prices/master/analysis/db_percentilesPerennials.csv"},

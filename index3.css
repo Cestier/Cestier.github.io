@@ -9,57 +9,56 @@ head {
 .big {
     position: relative;
     top: 4vh; 
-    left: 33%;
+    left: 22%;
+    width: 50%;
     font-family: 'Exo', sans-serif;
-    font-size: 8vh;
+    font-size: 4vh;
+    text-align: center;
     
 }
 
-/* This is for all the paragraphs*/
-p {
-    position: absolute;
-    top: 50vh;
-    left: 0vw;
-    color: white;
-    width: 51%;
-}
+
 
 
 /* This is for all the headers*/
 h3 {
-    position: absolute; 
+    position: relative; 
+    top: 20vh;
+    left: 10vw;
     font-family: 'Exo', Barlow, monospace;
     font-size: 3vh;
     color: #000000;
 }
 
+/* This is for all the paragraphs*/
+p {
+    position: absolute;
+    top: 5vh;
+    font-family: 'Nunito', Barlow, monospace;
+    font-size:2vh ;
+    left: 0vw;
+    color: rgb(0, 0, 0);
+    width: 80%;
+}
+
+h2 {
+    position: relative; 
+    left: 18vw;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2vh;
+    width: 70%;
+    text-align: justify;
+    color: #000000;
+}
+
 
 /* This is for everything within the External Chart embedding */ 
-  .chart-description {
-    position: relative;
-    top: 10vh;
-    left: 5vw;
-}
-#Location1 {
-    position: absolute;
-    top: 6vh;
-    left: -2vw;
 
-}
-#Location2 {
-    position: absolute;
-    top: 6vh;
-    left: 25vw;
-}
 
 
 
 /* Debating */
-.chart-description1 {
-    position: relative;
-    top: 10vh;
-    left: 61vw;
-}
+
 
 
 /* Re-create & improve */
@@ -87,8 +86,8 @@ h3 {
 
 #improve_chart {
     position: absolute;
-    top: 8vh;
-    left: 63.5vw;
+    top: 30vh;
+    left: 20vw;
     width: 30vw;
     height: 35vh;
 }
@@ -186,26 +185,21 @@ text-align {
     color: #333;
 }
 
-.Introduction{
-    position: absolute;
-    top:250px;
-    color: #333
-}
 
 body, html {
-        margin: 0;
-        padding: 0;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        overflow-y: scroll;
-        scrollbar-width: none;
-        font-family: 'Nunito', sans-serif;
-        overflow-x: hidden;
-        height: 100vh;
-        background: linear-gradient(to bottom, #003399, #FFCC00); /* Sky to Sea gradient */
-    }
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+    height: 100vh;
+    background: linear-gradient(to bottom, #F8F3F3, #F8F3F3); /* Sky to Sea gradient */
+}
 .scroll-indicator {
     position: relative;
     top: -1860px; /* Position above the bottom */
@@ -241,8 +235,8 @@ h5.sphere-text {
 
 .dropdown {
     position: relative;
-    top: -100vh;
-    left:-49vw;
+    top: 10vh;
+    left:10vw;
     display: inline-block;
     z-index: 20;
 }
@@ -284,4 +278,131 @@ h5.sphere-text {
 /* Show the dropdown content on hover */
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+
+
+
+
+
+/* New */
+
+
+.interactive_charts {
+    
+    background-color: #eae7ddf0;
+    width: auto;
+    min-width: auto;
+    align-items: center;
+    justify-content: center;
+    position:static;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-style: solid;
+    border-color: #eae7ddf0; 
+    border-width: 1px;
+    border-radius: 2vh;
+    text-align: center;
+    padding: 0.5vw;
+    flex-flow: row wrap;
+    
+  }
+
+
+
+
+/* Startup */
+
+#start-up {
+    position: relative;
+    top:90vh;
+}
+
+
+
+.interactive_charts1 {
+    
+    background-color: #eae7ddf0;
+    width: 10vw;
+    min-width: 1vw;
+    align-items: left;
+    position:static;
+    margin-left: 5vh;
+    margin-top: 10px;
+    border-style: solid;
+    border-color: #eae7ddf0; 
+    border-width: 10vw;
+    border-radius: 2vh;
+    text-align: center;
+    padding: 0.5vw;
+    flex-flow: row wrap;
+    
+  }
+
+ .introduction { 
+    position: relative;
+    top:10vh;
+}
+
+
+#sankey {
+    position: absolute;
+    top: 45vh;
+    left:-13vw;
+}
+
+#tax {
+    position: relative;
+    top:220vh;
+}
+
+#Location9 {
+    position: absolute;
+    top: 35vh;
+    left: -1vw;
+    width: 37vw;
+    height: 40vh;
+}
+
+#Location7 {
+    position: absolute;
+    top: 35vh;
+    left: 39vw;
+}
+
+
+#life {
+    position: relative;
+    top:305vh;
+}
+
+#Location10 {
+    position: absolute;
+    top: 42vh;
+    left: -8vw;
+}
+
+#Location4 {
+    position: absolute;
+    top: 42vh;
+    left: 45vw;
+}
+
+
+.conclusion { 
+    position: relative;
+    top:380vh;
+}
+
+
+#box {
+   position: relative;
+   top:430vh;
+   height: 40vh; 
+}
+
+#conclusion1 {
+    position: relative;
+    top: 380vh;
+    left: 46vw;
 }
