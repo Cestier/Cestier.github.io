@@ -548,7 +548,16 @@ h5.sphere-text {
         
       }
 
-
+      .conclusion { 
+        position: relative;
+        top:680vh;
+    }
+    
+      #conclusion1 {
+        position: relative;
+        top: 680vh;
+        left: 46vw;
+    }
 
 
 
