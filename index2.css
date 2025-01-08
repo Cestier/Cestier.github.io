@@ -1,460 +1,132 @@
-
-/* THIS IS THE CSS FOR INDEX 2 CHART_LIBRARY */
-head {
-    color:tomato;
-
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: linear-gradient(to bottom, #F8F3F3, #F8F3F3); /* Sky to Sea gradient */
 }
 
-/* This is for the chart library title */
+/* Title Section */
 .big {
     position: relative;
-    top: 4vh; 
-    left: 35%;
+    margin: 4vh auto;
+    text-align: center;
     font-family: 'Exo', sans-serif;
-    font-size: 8vh;
-    
+    font-size: 6vh;
 }
 
-/* This is for all the paragraphs*/
+/* Paragraph Styling */
 p {
-    position: absolute;
-    top: 51.5vh;
-    left: 0vw;
-    color: rgb(0, 0, 0);
+    margin: 2vh auto;
     width: 80%;
+    font-size: 2vh;
     text-align: justify;
 }
 
+
+
 #text10 {
-    width:60%;
+    width: 60%;
 }
 
-/* This is for all the headers*/
+
+/* Section Headings */
 h3 {
-    position: absolute; 
-    font-family: 'Exo', Barlow, monospace;
     font-size: 3vh;
-    color: #000000;
+    color: #000;
+    margin-bottom: 1vh;
 }
 
 h2 {
-    position: relative; 
-    left: 18vw;
-    font-family: 'Exo', sans-serif;
-    font-size: 2vh;
+    margin: 2vh auto;
     width: 70%;
-    color: #000000;
+    font-family: 'Exo', sans-serif;
+    font-size: 2.5vh;
+    color: #000;
+    text-align: center;
+    position: top;
 }
 
-
-/* This is for everything within the External Chart embedding */ 
-  .chart-description {
-    position: relative;
-    top: 10vh;
-    left: 5vw;
-}
-#Location1 {
-    position: absolute;
-    top: 6vh;
-    left: -2vw;
-
-}
-#Location2 {
-    position: absolute;
-    top: 6vh;
-    left: 28vw;
-}
-
-
-/* This is for everything within the Chart creating */ 
-      .chart-description7 {
-        position: relative;
-        top: 10vh;
-        left: 65vw;
-    }
-    
-    #Location10 {
-            position: absolute;
-            top: 40vh;
-            left: 0vw;
-        }
-    
-    #Location11 {
-            position: absolute;
-            top: 6vh;
-            left: 0vw;
-        }
-
-
-
-/* Debating */
-.chart-description1 {
-    position: relative;
-    top: 80vh;
-    left: 5vw;
-}
-
-#innovation_chart{
-    position: absolute;
-    top: 8vh;
-    left: -1vw;
-    width: 30vw;
-    height: 40vh;
-}
-
-#Location9 {
-    position: absolute;
-    top: 8vh;
-    left: -1vw;
-    width: 37vw;
-    height: 40vh;
-}
-
-#Location7 {
-    position: absolute;
-    top: 8vh;
-    left: 39vw;
-}
-
-/* Re-create & improve */
-.chart-description2 {
-    position: relative;
-    top:164vh;
-    left: 5vw;
-}
-
-#chart_recreate {
-    position: absolute;
-    top: 8vh;
-    left: 30vw;
-    width: 30vw;
-    height: 35vh;
-}
-
-#original_chart {
-    position: absolute;
-    top: 8vh;
-    left: -2vw;
-    width: 30vw;
-    height: 35vh;
-}
-
-#improve_chart {
-    position: absolute;
-    top: 8vh;
-    left: 62vw;
-    width: 30vw;
-    height: 35vh;
-}
-
-#text_create {
-    position: absolute;
-    top: 45vh;
-    left: 0vw;
-}
-/* Scraper */
-.chart-description8 {
-    position: relative;
-    top: 220vh;
-    left: 5vw;
-}
-
-#sentiment_chart {
-    position: absolute;
-    top: 8vh;
-    left: 10vw;
-    height: 45vh;
-}
-
-
-
-
-
-/* Loop */
-.chart-description3 {
-    position: relative;
-    top: 290vh;
-    left: 5vw;
-}
-
-#loop {
-    position: absolute;
-    top: 8vh;
-    left: 1vw;
-    width: 80vw;
-    height: 65vh;
-}
-
-
-#text_loop {
-    position: absolute;
-    top: 78vh;
-    left: 5vw;
-    color: rgb(0, 0, 0);
-    width: 80%;
-}
-
-text-align {
-    left: 20px;
-}
-
-
-
-/* R Chart */
-.chart-description4 {
-    position: relative;
-    top: 400vh;
-    left: 5vw;
-}
-
-#diagram_r {
-    position: absolute;
-    top: 8vh;
-    left: 1vw;
-    width: 30vw;
-    height: 50vh;
-}
-
-#text4 {
-    position: absolute;
-    top: 60vh;
-    left: 1vw;
-    color: rgb(0, 0, 0);
-    width: 32%;
-}
-
-#scraper_text{
-    position: absolute;
-    top: 10vh;
-    left: 50vw;
-    width:25%;
-}
-
-
-
-/* MAPS */
-.chart-description5 {
-    position: relative;
-    top: 400vh;
-    left: 40vw;
-}
-
-#Location3 {
-    position: absolute;
-    top: 6vh;
-    left: 0vw;
-}
-
-#Location4 {
-    position: absolute;
-    top: 45vh;
-    left: 0vw;
-}
-
-/* BIG DATA */
-.chart-description6 {
-    position: relative;
-    top: 510vh;
-    left: 5vw;
-}
-
-#Location8 {
-    position: absolute;
-    top: 6vh;
-    left: 0vw;
-}
-    
-#Location12 {
-    position: absolute;
-    top: 6vh;
-    left: 40vw;
-}
-
-#text6 {
-    width: 60vw;
-}
-
-/* Analytics*/
+/* Chart Group Layouts */
+.chart-description,
+.chart-description1,
+.chart-description2,
+.chart-description3,
+.chart-description4,
+.chart-description5,
+.chart-description6,
+.chart-description7,
+.chart-description8,
 .chart-description9 {
-    position: relative;
-    top: 600vh;
-    left: 5vw;
+    margin: 5vh auto;
+    width: 90%;
 }
 
+/* Chart Elements */
+#Location1, #Location2,
+#Location7, #Location9,
+#Location10, #Location11,
+#chart_recreate, #original_chart, #improve_chart,
+#sentiment_chart, #loop,
+#diagram_r, #Location3, #Location4,
+#Location8, #Location12,
 #Location13 {
-    position: absolute;
-    top: 6vh;
-    left: 0vw;
-}
-    
-#text6{
-    position: absolute;
-    top: 10vh;
-    left: 55vw;
-    width:25%;
+    display: block;
+    margin: 2vh auto;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
-
-
-
-/* Links and menu */
-.nav-link {
-    position: relative;
-    top: 30px;
-    right: 50px;
-    font-family: 'Barlow', Courier, monospace;
-    text-decoration: none;
-    padding: 10px 15px;
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
+/* Chart Hover Effects */
+.chart:hover, .chart1:hover, .interactive_charts:hover {
+    transform: scale(1.06);
+    transition: 0.5s;
 }
 
-.nav-link1 {
-    position: relative;
-    top: 70px;
-    right: 50px;
-    font-family: 'Barlow', Courier, monospace;
-    text-decoration: none;
-    padding: 10px 19px;
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
-}
-
-.nav-link2 {
-    position: relative;
-    top: 120px;
-    right: 50px;
-    font-family: 'Barlow', Courier, monospace;
-    text-decoration: none;
-    padding: 1px 19px;
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
-}
-
-.nav-link3 {
-    position: relative;
-    top: 130px;
-    right: 50px;
-    font-family: 'Barlow', Courier, monospace;
-    text-decoration: none;
-    padding: 10px 19px;
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
-}
-
-.nav-link4 {
-    position: relative;
-    top: 0px;
-    right: 90px;
-    font-family: 'Barlow', Courier, monospace;
-    text-decoration: none;
-    padding: 1px 19px;
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
-}
-
-
-
-.links {
-    position: absolute;
-    top:58px;
-    left:20px;
-    color: #333;
-}
-
-.Introduction{
-    position: absolute;
-    top:250px;
-    color: #333
-}
-
-body, html {
-        margin: 0;
-        padding: 0;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        overflow-y: scroll;
-        scrollbar-width: none;
-        font-family: 'Nunito', sans-serif;
-        overflow-x: hidden;
-        height: 100vh;
-        background: linear-gradient(to bottom, #F8F3F3, #F8F3F3); /* Sky to Sea gradient */
-    }
-.scroll-indicator {
-    position: relative;
-    top: -1860px; /* Position above the bottom */
-    left: 50%;
-    transform: translateX(-50%) rotate(0deg);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: transform 0.3s ease; /* Smooth transition for the flip */
-}
-
-h5.sphere-text {
-    position: relative;
-    top: -30vh;
-    left: 42%;
-    display: inline-block;       /* Inline-block to keep the text within a rounded background */
-    padding: 1vh 1vw;          /* Padding to create space around the text */
-    background-color: #d3d3d3;   /* Light grey background */
-    border-radius: 20px;
-    font: 'Barlow';         /* Round corners to form a sphere-like appearance */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for a slight 3D effect */
-    font-size: 2vh;             /* Adjust font size as needed */
-    color: #333;                 /* Text color */
-    text-align: center;          /* Center the text */
-}
-
+/* Navigation Dropdown */
 .dropdown {
     position: relative;
-    top: 10vh;
-    left:10vw;
-    display: inline-block;
-    z-index: 50;
+    margin: 2vh auto;
+    width: fit-content;
+    z-index: 10;
 }
 
 .compass-icon {
-    width: 5vw; /* Adjust size as needed */
+    width: 5vw;
     cursor: pointer;
-    transition: transform 0.6s ease; /* Optional: rotation effect on hover */
+    transition: transform 0.6s ease;
 }
 
 .compass-icon:hover {
-    transform: rotate(90deg); /* Optional: rotate on hover */
+    transform: rotate(90deg);
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 8vh; /* Adjust based on compass icon size */
-    left: -2.3vw;
-    background-color: #f9f9f900;
+    top: 8vh;
+    left: 0;
+    background-color: #ffffff;
     min-width: 150px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-    z-index: 1;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 10;
     border-radius: 5px;
 }
 
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .dropdown-content a {
-    color: black;
     padding: 12px 16px;
     text-decoration: none;
+    color: #000;
     display: block;
     transition: background-color 0.2s ease;
 }
@@ -463,103 +135,107 @@ h5.sphere-text {
     background-color: #f1f1f1;
 }
 
-/* Show the dropdown content on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
+/* Responsiveness with Media Queries */
+@media (max-width: 1024px) {
+    .big {
+        font-size: 5vh;
+    }
+
+    h3 {
+        font-size: 2.5vh;
+    }
+
+    h2 {
+        font-size: 2.2vh;
+    }
+
+    p {
+        font-size: 1.8vh;
+        width: 90%;
+    }
+
+    #Location1, #Location2,
+    #Location7, #Location9,
+    #Location10, #Location11,
+    #chart_recreate, #original_chart, #improve_chart,
+    #sentiment_chart, #loop,
+    #diagram_r, #Location3, #Location4,
+    #Location8, #Location12,
+    #Location13 {
+        width: 95%;
+        max-width: 450px;
+    }
 }
 
-
-
-
-/* Where all the charts groups are */
-/* Inspired by Christina phm */
-.chart {
-    
-    background-color: #eae7ddf0;
-    width: auto;
-    min-width: auto;
-    align-items: center;
-    justify-content: center;
-    position:static;
-    margin-left: 10px;
-    margin-top: 10px;
-    border-style: solid;
-    border-color: #eae7ddf0; 
-    border-width: 1px;
-    border-radius: 30px;
-    text-align: center;
-    padding: 10px;
-    flex-flow: row wrap;
-    
-  }
-  
-  .chart:hover {
-      
-        transform: scale(1.06, 1.06);
-        transition: 1s;
-        
-      }
-  
-
-.chart1 {
-    
-        background-color: #fffffff0;
-        width: auto;
-        min-width: auto;
-        align-items: center;
-        justify-content: center;
-        position:static;
-        margin-left: 10px;
-        margin-top: 10px;
-        border-style: solid;
-        border-color: #eae7ddf0; 
-        border-width: 1px;
-        border-radius: 30px;
-        text-align: center;
-        padding: 10px;
-        flex-flow: row wrap;
-        
-      }
-      
-      .chart1:hover {
-          
-        transform: scale(1.06, 1.06);
-        transition: 1s;
-        
-      }
-
-.interactive_charts {
-    
-        background-color: #eae7ddf0;
-        width: auto;
-        min-width: auto;
-        align-items: center;
-        justify-content: center;
-        position:static;
-        margin-left: 10px;
-        margin-top: 10px;
-        border-style: solid;
-        border-color: #eae7ddf0; 
-        border-width: 1px;
-        border-radius: 30px;
-        text-align: center;
-        padding: 10px;
-        flex-flow: row wrap;
-        
-      }
-
-      .conclusion { 
-        position: relative;
-        top:680vh;
-    }
-    
-      #conclusion1 {
-        position: relative;
-        top: 680vh;
-        left: 46vw;
+@media (max-width: 768px) {
+    .big {
+        font-size: 4.5vh;
     }
 
+    h3 {
+        font-size: 2.2vh;
+    }
 
+    h2 {
+        font-size: 2vh;
+    }
+
+    p {
+        font-size: 1.6vh;
+        width: 95%;
+    }
+
+    #Location1, #Location2,
+    #Location7, #Location9,
+    #Location10, #Location11,
+    #chart_recreate, #original_chart, #improve_chart,
+    #sentiment_chart, #loop,
+    #diagram_r, #Location3, #Location4,
+    #Location8, #Location12,
+    #Location13 {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .compass-icon {
+        width: 8vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .big {
+        font-size: 4vh;
+    }
+
+    h3 {
+        font-size: 2vh;
+    }
+
+    h2 {
+        font-size: 1.8vh;
+    }
+
+    p {
+        font-size: 1.4vh;
+        width: 100%;
+    }
+
+    #Location1, #Location2,
+    #Location7, #Location9,
+    #Location10, #Location11,
+    #chart_recreate, #original_chart, #improve_chart,
+    #sentiment_chart, #loop,
+    #diagram_r, #Location3, #Location4,
+    #Location8, #Location12,
+    #Location13 {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .compass-icon {
+        width: 10vw;
+    }
+}
 
 
 
